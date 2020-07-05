@@ -21,6 +21,8 @@ table.dataTable tfoot th {
     width: 25px;
     text-align: center;
 }
+
+/*causes columns to not align with inputs*/
 .dataTables_scrollBody .dataTable thead {
     display:none;
     }

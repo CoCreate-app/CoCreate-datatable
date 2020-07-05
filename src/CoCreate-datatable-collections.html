@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://cdn.cocreate.app/favicon.ico" type="image/ico" sizes="16x16">
     <title>CoCreate Datatable</title>
 
   <!-- CoCreate UI -->
   <!--<link rel="stylesheet" href="https://cdn.cocreate.app/CoCreate.min.css" type="text/css" />-->
-  <link rel="stylesheet" href="https://server.cocreate.app/css/CoCreateUI.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://server.cocreate.app/css/CoCreate.min.css" type="text/css" />
 
   <!-- Jquery -->
   <script
@@ -48,11 +49,11 @@
         <ul class="cocreate-scroll display-inline-flex direction-rtl font-size-20px align-items-center list-style-type-none">
     			
     			<!-- Window Controls -->
-    			<li><a class="btn-wnd-close"><i class="fas fa-times">
+    			<li><a class="btn-modal-close"><i class="fas fa-times">
     			  </i></a></li>
-    			<li><a class="btn-wnd-maximize"><i data-transform_to="far fa-window-restore" class="far fa-window-maximize">
+    			<li><a class="btn-modal-maximize"><i data-transform_to="far fa-window-restore" class="far fa-window-maximize">
     			  </i></a></li>
-    			<li><a class="btn-wnd-minimize"><i class="far fa-window-minimize">
+    			<li><a class="btn-modal-minimize"><i class="far fa-window-minimize">
     			  </i></a></li>
     			
     			<!-- fullscreen toogle and icon transform-->
@@ -98,7 +99,7 @@
       </div>
       
       <!-- Main Content with Viewport/Boundaries for windows -->  
-		  <div class="cocreate-container" id="customVPhere" data-main_content_id="content">
+		  <div class="cocreate-container" id="modal-viewport" data-main_content_id="content">
   			  <div class="btn-group">
     				<ul data-table_id="example1" class="colvis-menu cocreate-dt-menu"></ul>
 			    </div>
@@ -220,7 +221,7 @@
     <!--CoCreateJS-->
   <script src="https://server.cocreate.app/js/CoCreate.min.js"></script>
   <!--CoCreate Plugins-->
-  <script src="https://server.cocreate.app/CoCreate-plugins/CoCreate-modal/CoCreate-modal.js"></script>
+  <script src="https://server.cocreate.app/CoCreate-plugins/CoCreate-modal/src/CoCreate-modal.js"></script>
   <script src="https://server.cocreate.app/js/CoCreate-datatables.js"></script>
 
 </body>
