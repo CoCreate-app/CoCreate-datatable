@@ -1,19 +1,36 @@
+<<<<<<< HEAD
 # Contributing to CoCreate-dataTable
 
 This project is work of [many contributors](https://github.com/CoCreate-app/CoCreate-adminUI/graphs/contributors).
 You're encouraged to submit [pull requests](https://github.com/CoCreate-app/CoCreate-adminUI/pulls),
 [propose features and discuss issues](https://github.com/CoCreate-app/CoCreate-adminUI/issues).
+=======
+# Contributing to CoCreateJS
+
+This project is work of [many contributors](https://github.com/CoCreate-app/CoCreate-datatables/graphs/contributors).
+You're encouraged to submit [pull requests](https://github.com/CoCreate-app/CoCreate-datatables/pulls),
+[propose features and discuss issues](https://github.com/CoCreate-app/CoCreate-datatables/issues).
+>>>>>>> edc0e3593aa79b00c5db57728a4ff0fc0ebc5414
 
 In the examples below, substitute your Github username for `contributor` in URLs.
 
 ## Fork the Project
 
+<<<<<<< HEAD
 Fork the [project on Github](https://github.com/CoCreate-app/CoCreate-dataTable) and check out your copy.
 
 ```
 git clone https://github.com/contributor/CoCreate-dataTable.git
 cd CoCreate-dataTable
 git remote add upstream https://github.com/CoCreate-app/CoCreate-dataTable.git
+=======
+Fork the [project on Github](https://github.com/CoCreate-app/CoCreateJS) and check out your copy.
+
+```
+git clone https://github.com/contributor/CoCreateJS.git
+cd CoCreateJS
+git remote add upstream https://github.com/CoCreate-app/CoCreateJS.git
+>>>>>>> edc0e3593aa79b00c5db57728a4ff0fc0ebc5414
 ```
 
 ## Create a Topic Branch
@@ -26,6 +43,18 @@ git pull upstream master
 git checkout -b my-feature-branch
 ```
 
+<<<<<<< HEAD
+=======
+## Bundle Install and Test
+
+Ensure that you can build the project and run tests.
+
+```
+bundle install
+bundle exec rake
+```
+
+>>>>>>> edc0e3593aa79b00c5db57728a4ff0fc0ebc5414
 ## Write Tests
 
 Try to write a test that reproduces the problem you're trying to fix or describes a feature that you want to build.
@@ -70,7 +99,11 @@ git push origin my-feature-branch
 
 ## Make a Pull Request
 
+<<<<<<< HEAD
 Go to [https://github.com/CoCreate-app/CoCreate-adminUI](https://github.com/CoCreate-app/CoCreate-adminUI) and select your feature branch.
+=======
+Go to [https://github.com/CoCreate-app/CoCreate-datatables](https://github.com/CoCreate-app/CoCreate-datatables) and select your feature branch.
+>>>>>>> edc0e3593aa79b00c5db57728a4ff0fc0ebc5414
 Click the 'Pull Request' button and fill out the form. Pull requests are usually reviewed within a few days.
 
 ## Rebase
@@ -88,7 +121,11 @@ git push origin my-feature-branch -f
 Update the [CHANGELOG](CHANGELOG.md) with the pull request number. A typical entry looks as follows.
 
 ```
+<<<<<<< HEAD
 * [#123](https://github.com/CoCreate-app/CoCreate-adminUI/pull/123): Reticulated splines - [@contributor](https://github.com/contributor).
+=======
+* [#123](https://github.com/CoCreate-app/CoCreate-datatables/pull/123): Reticulated splines - [@contributor](https://github.com/contributor).
+>>>>>>> edc0e3593aa79b00c5db57728a4ff0fc0ebc5414
 ```
 
 Amend your previous commit and force push the changes.
