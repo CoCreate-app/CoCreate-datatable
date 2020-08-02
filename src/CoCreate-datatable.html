@@ -8,194 +8,200 @@
     <link rel="icon" href="https://cdn.cocreate.app/favicon.ico" type="image/ico" sizes="16x16">
     <title>Datatables | CoCreate</title>
   
-    <!-- CoCreate UI -->
-    <link rel="stylesheet" href="https://cdn.cocreate.app/CoCreate.min.css" type="text/css" />
+    <!-- CoCreateCSS -->
+    <link rel="stylesheet" href="https://server.cocreate.app/css/CoCreate.min.css" type="text/css" />
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossorigin="anonymous" />  
     
-    <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  
-    <!-- Datatables -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.18/b-1.5.6/b-colvis-1.5.6/b-flash-1.5.6/b-html5-1.5.6/b-print-1.5.6/cr-1.5.0/fc-3.2.5/fh-3.1.4/rr-1.2.4/sc-2.0.0/sl-1.3.0/datatables.min.css"/>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.18/b-1.5.6/b-colvis-1.5.6/b-flash-1.5.6/b-html5-1.5.6/b-print-1.5.6/cr-1.5.0/fc-3.2.5/fh-3.1.4/rr-1.2.4/sc-2.0.0/sl-1.3.0/datatables.min.js"></script>
-  
   </head>
-
+  <style>
+  tbody > tr:hover {
+    background:#fafafa;  
+  }
+  th, td {
+    border-bottom: 1px solid #e0e0e0;
+    padding:10px;
+  }
+  </style>
   <body>
-      <!-- Navbar -->
-      <div data-main_content_id="content" class="nav width-100-percernt display-flex align-items-center bg-light-gray height-50px" data-scroll_effect="hide-nav" data-scroll_position="50">
-  
-        <!-- Menu Icon Animations -->
-        <a class="nav-toggle menu_icon--Vdots" data-toggle_sidenav="menuL">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </a>
-          
-          <!-- Horizontal Scroll Nav/Tabs -->
-          <ul class="cocreate-scroll display-inline-flex direction-rtl font-size-20px align-items-center list-style-type-none">
-      			
-      			<!-- Window Controls -->
-      			<li><a class="btn-modal-close"><i class="fas fa-times">
-      			  </i></a></li>
-      			<li><a class="btn-modal-maximize"><i data-transform_to="far fa-window-restore" class="far fa-window-maximize">
-      			  </i></a></li>
-      			<li><a class="btn-modal-minimize"><i class="far fa-window-minimize">
-      			  </i></a></li>
-      			
-      			<!-- fullscreen toogle and icon transform-->
-      			<li><a class="fs-toggle"><i data-transform_to="fas fa-compress" class="fas fa-expand">
-      			  </i></a></li>
-      			
-      			<!-- Render Builder -->
-      			<li>
-      			    <a target="modal" href="render.html"
-                	 data-pass_collection="modules"
-                	 data-pass_document_id="" 
-                	 data-pass_prefix="" 
-                	 data-pass_to="builder" 
-                   data-modal_width="100%"
-                   data-pass_id="render">
-                		<i class="fas fa-palette"></i>
-              		 <div data-pass_collection="modules"
-        						   data-pass_document_id=""
-    						       data-pass_prefix=""
-        						   data-pass_to="render"
-        						   class="sessionBuilderUI_id">
-      						 </div>
-                 </a>
-            </li>
-            
-            
-            
-            <!-- Render Module Form -->
-      			<li><a target="modal" href="render.html" data-pass_collection="modules" data-pass_prefix="form_" data-pass_document_id="" data-pass_to="render" data-modal_ajax="false" data-modal_width="320px" data-modal_height="100%" data-modal_color="#229954" data-modal_x="" data-modal_y="" data-pass_id="render"><i class="fas fa-plus">
-      			  </i></a></li>
-      			
-      			<!-- Datatable Controls -->  
-            <li><a data-btn_type="delete-rows" data-table_id="example1" class="btn-table"><i class="far fa-trash-alt"></i></a></li>
-      			<li><a data-btn_type="column-visibility" data-table_id="example1" class="btn-table"><i class="far fa-eye"></i></a></li>
-      			<li><a data-btn_type="pdf" data-table_id="example1" class="btn-table"><i class="far fa-file-pdf"></i></a></li>
-      			<li><a data-btn_type="excel" data-table_id="example1" class="btn-table"><i class="far fa-file-excel"></i></a></li>
-      			<li><a data-btn_type="csv" data-table_id="example1" class="btn-table"><i class="fas fa-file-csv"></i></a></li>
-      			<li><a data-btn_type="column-visibility" data-table_id="example1" class="btn-table"><i class="fas fa-eye"></i></a></li>
-      			<li><a data-btn_type="copy" data-table_id="example1" class="btn-table"><i class="far fa-copy"></i></a></li>
-      			<li><a data-btn_type="print" data-table_id="example1" class="btn-table"><i class="fas fa-print"></i></a></li>
-  				
-  				 </ul>
-        </div>
+    <!-- Navbar -->
+    <div class="nav display:flex align-items:center bg:light-gray" 
+      data-main_content_id="content" 
+      data-scroll_effect="hide-nav" 
+      data-scroll_position="50">
+
+      <!-- Menu Icon Animations -->
+      <a class="nav-toggle menu_icon--Vdots" data-toggle_sidenav="menuL">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </a>
         
-        <!-- Main Content with Viewport/Boundaries for windows -->  
-  		  <div class="cocreate-container" id="modal-viewport" data-main_content_id="content">
-    			  <div class="btn-group">
-      				<ul data-table_id="example1" class="colvis-menu cocreate-dt-menu"></ul>
-  			    </div>
-  			    
-  			    <!-- Datatable Fetch using data-attributes -->  
-  			    <table id="example1" width="100%" 
-  			      data-fetch_collection="modules" 
-  			      data-table_id="example1" 
-  			      class="table row-border hover dt-selectable">
-      				<thead>
-      				  <tr>
-        					<th>
-        					  <input type="text" class="floating-label"
-                   	  data-filter_name="name" 
-                   	  data-value_type="string"
-                   	  data-filter_operator=""
-                   	  placeholder="Module Name" class="width-100-percent"></th>
-        					<th>Id</th>
-      				  </tr>
-      			 	</thead>
-  				    <tbody>
-    				  
-    				  <!-- Datatable Template -->  
-    				  <tr class="template">
-      					<td class="selectable">
-      					  <div class="minwidth-200">
-        					  <div class="icon-wrapper">
-        						  <span data-document_id="" name="icon"></span>
-        					  </div>
-        					  <div>
-          						<a target="modal" href="render.html" 
-          						   data-pass_collection="modules"
-          						   data-pass_document_id=""
-          						   data-pass_prefix="form_"
-          						   data-pass_to="form-fields" 
-          						   data-modal_ajax="false" 
-          						   data-modal_width="320px" 
-          						   data-modal_height="100%" 
-          						   data-modal_color="#229954" 
-          						   data-modal_header="true"
-          						   data-modal_x="" 
-          						   data-modal_y="">
-          						  <h4 name="name" class="noMargins">Module Name</h4>
-          						  <div data-pass_collection="modules"
-              						   data-pass_document_id=""
-          						       data-pass_prefix="form_"
-              						   data-pass_to="render"
-              						    data-pass_id="render">
-          						  </div>
-          						</a>
-          						  <h5 name="description" class="noMargins"></h5>
-        					  </div>
-      					  </div>
-      					</td>
-      					<td>
-      					  <a target="modal" href="module_form.html"
-      					    
-      					     data-pass_prefix="form_"
-      					     data-pass_collection="modules"
-      					     data-pass_to="form-fields"
-      					     data-modal_ajax="false"
-      					     data-modal_width="320px"
-      					     data-modal_height="100%"
-      					     data-modal_color="#229954"
-      					     data-modal_header="true"
-      					     data-modal_x=""
-      					     data-modal_y="">
-      					     <b name="document_id">Module Id</b>
-      						    <div data-pass_collection="modules"
-          						   data-pass_document_id=""
-      						       data-pass_prefix="form_"
-          						   data-pass_to="render"
-          						  data-pass_id="render">
-        						  </div>
-      						</a>
-      					</td>
-    				  </tr>
-    				</tbody>
-    				<tfoot>
-    				  <tr>
-      					<th>Name</th>
-      					<th>Id</th>
-    				  </tr>
-    				</tfoot>
-  			  </table>
+      <!-- Horizontal Scroll Nav/Tabs -->
+      <ul class="cocreate-scroll display:inline-flex direction:rtl font-size:20px align-items:center list-style-type:none width:100% height:50px">
+  			
+  			<!-- Modal Controls -->
+  			<li class="margin-right:15px">
+  			  <a class="btn-modal-close"><i class="fas fa-times"></i></a>
+  			</li>
+  			<li class="margin-right:15px"><a class="btn-modal-maximize"><i data-transform_to="far fa-window-restore" class="far fa-window-maximize">
+  			  </i></a>
+  			</li>
+  			<li class="margin-right:15px"><a class="btn-modal-minimize"><i class="far fa-window-minimize">
+  			  </i></a>
+  			</li>
+  			
+  			<!-- fullscreen toogle and icon transform-->
+  			<li class="margin-right:15px">
+  			  <a class="fs-toggle"><i data-transform_to="fas fa-compress" class="fas fa-expand"></i></a>
+  			</li>
+  			
+  			<!-- Render Builder -->
+  			<li class="margin-right:15px">
+  			    <a target="modal" href="render.html"
+            	 data-pass_collection="modules"
+            	 data-pass_document_id="" 
+            	 data-pass_prefix="" 
+            	 data-pass_to="builder" 
+               data-modal_width="100%"
+               data-pass_id="render">
+            		<i class="fas fa-palette"></i>
+          		 <div data-pass_collection="modules"
+    						   data-pass_document_id=""
+						       data-pass_prefix=""
+    						   data-pass_to="render"
+    						   class="sessionBuilderUI_id">
+  						 </div>
+             </a>
+        </li>
+        
+        <!-- Render Module Form -->
+  			<li class="margin-right:15px">
+  			  <a target="modal" href="module_form.html" 
+  			    data-pass_collection="modules" 
+  			    data-pass_prefix="form_" 
+  			    data-pass_document_id="" 
+  			    data-pass_to="render" 
+  			    data-modal_width="320px" 
+  			    data-modal_height="100%" 
+  			    data-modal_color="#229954" 
+  			    data-modal_header="false" 
+  			    data-modal_x="" 
+  			    data-modal_y="" 
+  			    data-pass_id="render">
+  			   <i class="fas fa-plus"></i>
+  			  </a>
+  			</li>
+  			
+  			<!-- Datatable Controls -->  
+        <li class="margin-right:15px">
+          <a data-btn_type="delete-rows" data-template_id="datatable"><i class="far fa-trash-alt"></i></a>
+        </li>
+  			<li class="margin-right:15px">
+  			  <a data-btn_type="column-visibility" data-template_id="datatable"><i class="far fa-eye"></i></a>
+  			</li>
+  			<li class="margin-right:15px">
+  			  <a data-backup_type="export" data-export_type="csv"  data-template_id="datatable"><i class="fas fa-file-csv"></i></a>
+  			</li>
+  			<li class="margin-right:15px">
+  			  <a data-backup_type="export" data-export_type="json"><i class="fas fa-eye"></i></a>
+  			</li>
+  			<li class="margin-right:15px">
+  			  <a  data-backup_type="import" data-template_id="datatable"><i class="fas fa-eye"></i></a>
+  			</li>
+  			<li class="margin-right:15px">
+  			  <a data-btn_type="copy" data-template_id="datatable"><i class="far fa-copy"></i></a>
+  			</li>
+  			<li class="margin-right:15px">
+  			  <a data-btn_type="print" data-template_id="datatable"><i class="fas fa-print"></i></a>
+  			</li>
+			
+			 </ul>
+    </div>
+      
+    <!-- Main Content with Viewport/Boundaries for windows -->  
+	  <div class="cocreate-container" id="modal-viewport" data-main_content_id="content">
+
+      <table class="width:100%">
+        <thead>
+            <tr>
+              <th class="position:relative name">
+        		  <input type="text" class="floating-label"
+               	  data-filter_name="name" 
+               	  data-value_type="string"
+               	  data-filter_operator=""
+       			      data-template_id="datatable" 
+               	  placeholder="Name">
+                  <span class="position:absolute bottom:18px right:20px float:right font-size:18px z-index:6" >
+                    <a data-order_by="name" value="desc" data-template_id="datatable" data-show="#asc1" data-hide="#sort1" id="sort">
+                      <i class="fas fa-sort"></i>
+                    </a>
+                    <a class="hidden" data-order_by="name" value="asc" data-template_id="datatable" data-show="#desc1" data-hide="#asc1" id="asc1">
+                      <i class="fas fa-sort-up"></i>
+                    </a>
+                    <a class="hidden" data-order_by="name" value="desc" data-template_id="datatable" data-show="#asc1" data-hide="#desc1" id="desc1">
+                      <i class="fas fa-sort-down"></i>
+                    </a>
+                  </span>
+                  <!--<a class="position:absolute bottom:18px right:20px float:right font-size:18px z-index:6" data-order_by="name" value="asc" data-template_id="datatable">-->
+                  <!--  <i class="fas fa-sort"></i>-->
+                  <!--</a>-->
+              </th>
+              <th class="position:relative">
+          		  <input type="text" class="floating-label"
+               	  data-filter_name="_id" 
+               	  data-value_type="string"
+               	  data-filter_operator=""
+       			      data-template_id="datatable" 
+               	  placeholder="Document_id"/>
+                  <span class="position:absolute bottom:18px right:20px float:right font-size:18px z-index:6" >
+                    <a data-order_by="name" value="desc" data-template_id="datatable" data-show="#asc" data-hide="#sort" id="sort">
+                      <i class="fas fa-sort"></i>
+                    </a>
+                    <a class="hidden" data-order_by="_id" value="asc" data-template_id="datatable" data-show="#desc" data-hide="#asc" id="asc">
+                      <i class="fas fa-sort-up"></i>
+                    </a>
+                    <a class="hidden" data-order_by="_id" value="desc" data-template_id="datatable" data-show="#asc" data-hide="#desc" id="desc">
+                      <i class="fas fa-sort-down"></i>
+                    </a>
+                  </span>
+              </th>
+            </tr>
+        </thead>
+        <tbody class="template-wrapper"
+          data-fetch_collection="users"
+          data-pass_to="me1234" 
+          data-fetch_name="" 
+          data-fetch_value="" 
+          data-fetch_count=""
+          data-order_by="name" 
+          data-order_type="asc"
+          data-template_id="datatable"
+          data-search_type="or">
+          
+          <tr class="template border:bottom">
+            <td class="name"><h4 data-pass_id="me1234" name="name" >No Name</h4></td>
+            <td ><h4 data-pass_id="me1234" name="_id">Document_id</h4></td>
+          </tr>
+        </tbody>
+      </table>
   
-  				</div>
-    	<!--<div id="menuL" class="cocreate-sidenav" data-main_content="content">-->
-     <!-- 					<ul class="adminUI-menu">-->
-  			<!--					<li class="">-->
-  			<!--						<a target="modal" href="modules/dashboards/dashboard.html" data-pass_collection="modules" data-pass_document_id="5cc0efdb1c5c581c14a0fcaf" data-pass_to="me1234" data-modal_ajax="false" data-modal_width="100%" data-modal_height="100%" data-modal_color="#008B8B">-->
-  			<!--							<i class="fas fa-tachometer-alt"></i>-->
-  			<!--							<span >DashBoard</span>-->
-  			<!--						</a>-->
-  			<!--						<span class="cocreate-badge badge-danger">4</span>-->
-  			<!--					</li>-->
-  			<!--				</ul>-->
-     <!--     		  <div class="resizeHandler"></div>-->
-     <!--     	  </div>-->
-              	
-    	  <a target="modal" href="render.html" data-pass_collection="modules" data-pass_document_id="" data-pass_prefix="form_" data-pass_to="render" data-modal_ajax="false" data-modal_width="320px" data-modal_height="100%" data-modal_color="#229954" data-modal_x="" data-modal_y="" class="position-fixed bottom-15px right-15px bg-blue grow-hover round" data-pass_id="render">
-    	    <i class="fa fa-plus"></i>
-    		</a>
+  	</div>
+
+	  <a target="modal" href="render.html" 
+	     data-pass_collection="modules"
+	     data-pass_document_id=""
+	     data-pass_prefix="form_"
+	     data-pass_to="render"
+	     data-modal_width="320px" 
+	     data-modal_height="100%"
+	     data-modal_color="#229954"
+	     class="position:fixed bottom:15px right:15px bg:blue grow-hover round" data-pass_id="render">
+	    <i class="fa fa-plus"></i>
+		</a>
   
     
     <script>
@@ -207,13 +213,7 @@
     </script>
   
     <!--CoCreateJS-->
-    <script src="https://cdn.cocreate.app/CoCreate.min.js"></script>
+    <script src="https://server.cocreate.app/js/CoCreate.min.js"></script>
     
-    <!--CoCreate Modal-->
-    <script src="https://cdn.cocreate.app/CoCreate-modal.js"></script>
-
-    <!--CoCreate Datatables-->
-    <script src="./CoCreate-datatables.js"></script>
-  
   </body>
 </html>

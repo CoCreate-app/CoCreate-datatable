@@ -24,17 +24,17 @@ th, td {
 }
 </style>
 <div  data-hide='.name'  data-show='.name'><i class="fas fa-plus-circle" data-transform_to="fas fa-minus-circle"></i></div>
-<table class="width-100-percent ">
+<table class="width:100% ">
     <thead>
         <tr>
-            <th class="position-relative name">
+            <th class="position:relative name">
       		  <input type="text" class="floating-label"
              	  data-filter_name="name" 
              	  data-value_type="string"
              	  data-filter_operator=""
      			      data-template_id="datatable" 
              	  placeholder="Name">
-                <span class="position-absolute bottom-18px right-20px float-right font-size-18px z-index-6" >
+                <span class="position:absolute bottom:18px right:20px float:right font-size:18px z-index:6" >
                   <a data-order_by="name" value="desc" data-template_id="datatable" data-show="#asc1" data-hide="#sort1" id="sort">
                     <i class="fas fa-sort"></i>
                   </a>
@@ -45,18 +45,18 @@ th, td {
                     <i class="fas fa-sort-down"></i>
                   </a>
                 </span>
-                <!--<a class="position-absolute bottom-18px right-20px float-right font-size-18px z-index-6" data-order_by="name" value="asc" data-template_id="datatable">-->
+                <!--<a class="position:absolute bottom:18px right:20px float:right font-size:18px z-index:6" data-order_by="name" value="asc" data-template_id="datatable">-->
                 <!--  <i class="fas fa-sort"></i>-->
                 <!--</a>-->
             </th>
-            <th class="position-relative">
+            <th class="position:relative">
         		  <input type="text" class="floating-label"
              	  data-filter_name="_id" 
              	  data-value_type="string"
              	  data-filter_operator=""
      			      data-template_id="datatable" 
              	  placeholder="Document_id"/>
-                <span class="position-absolute bottom-18px right-20px float-right font-size-18px z-index-6" >
+                <span class="position:absolute bottom:18px right:20px float:right font-size:18px z-index:6" >
                   <a data-order_by="name" value="desc" data-template_id="datatable" data-show="#asc" data-hide="#sort" id="sort">
                     <i class="fas fa-sort"></i>
                   </a>
@@ -81,14 +81,13 @@ th, td {
         data-template_id="datatable"
         data-search_type="or">
         
-        <tr class="template border-bottom">
-            <td class="name"><h4 data-pass_id="me1234" name="name">No Name</h4></td>
+        <tr class="template border:bottom">
+            <td class="name"><h4 data-pass_id="me1234" name="name" >No Name</h4></td>
             <td ><h4 data-pass_id="me1234" name="_id">Document_id</h4></td>
         </tr>
     </tbody>
 </table>
 
-<<<<<<< HEAD
 		<!--<div data-template_id="datatable" -->
 		<!--  data-filter_name="currentLocation.coords"-->
 		<!--  data-filter_value="[ [-73, 40], 100 ]"-->
@@ -96,15 +95,6 @@ th, td {
 		<!--  data-value_type="raw"-->
 		<!--  data-filter_type="$center">-->
 		<!--</div>-->
-=======
-		<div data-template_id="datatable" 
-		  data-filter_name="currentLocation.coords"
-		  data-filter_value="[ [-73, 40], 100 ]"
-		  data-filter_operator="$geoWithin" 
-		  data-value_type="raw"
-		  data-filter_type="$center">
-		</div>
->>>>>>> edc0e3593aa79b00c5db57728a4ff0fc0ebc5414
 
 
 
@@ -112,8 +102,8 @@ th, td {
 
 
 
-<!--<div class="display-flex Sortable" data-group_name="columns">-->
-<!--    <ul class="template-wrapper dislay-flex list-style-type-none"-->
+<!--<div class="display:flex Sortable" data-group_name="columns">-->
+<!--    <ul class="template-wrapper dislay-flex list-style-type:none"-->
 <!--        data-fetch_collection="module_activity"-->
 <!--        data-pass_to="me1234" -->
 <!--        data-fetch_name="data-module_id" -->
@@ -123,10 +113,10 @@ th, td {
 <!--        data-order_type="asc"-->
 <!--        data-template_id="filter_tes"-->
 <!--        data-search_type="or">-->
-<!--        <li class="border-bottom padding-15px">Name</li>-->
-<!--        <li class="template border-bottom padding-15px" data-pass_id="me1234" name="name">1</li>-->
+<!--        <li class="border:bottom padding-15px">Name</li>-->
+<!--        <li class="template border:bottom padding-15px" data-pass_id="me1234" name="name">1</li>-->
 <!--    </ul>-->
-<!--    <ul class="template-wrapper dislay-flex list-style-type-none"-->
+<!--    <ul class="template-wrapper dislay-flex list-style-type:none"-->
 <!--        data-fetch_collection="module_activity"-->
 <!--        data-pass_to="me1234" -->
 <!--        data-fetch_name="data-module_id" -->
@@ -136,8 +126,8 @@ th, td {
 <!--        data-order_type="asc"-->
 <!--        data-template_id="filter_te"-->
 <!--        data-search_type="or">-->
-<!--        <li class="border-bottom padding-15px">Name</li>-->
-<!--        <li class="template border-bottom padding-15px" data-pass_id="me1234" name="name">1</li>-->
+<!--        <li class="border:bottom padding-15px">Name</li>-->
+<!--        <li class="template border:bottom padding-15px" data-pass_id="me1234" name="name">1</li>-->
 <!--    </ul>-->
 <!--</div>-->
 
@@ -150,7 +140,3 @@ th, td {
   </script>
   
   <script src="https://server.cocreate.app/js/CoCreate.min.js"></script>
-
-
-  <!--<script src="https://server.cocreate.app/js/CoCreateUI.min.js"></script>-->
-

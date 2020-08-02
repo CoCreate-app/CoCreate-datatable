@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>form.js</title>
+
+  <link rel="stylesheet" href="https://server.cocreate.app/css/CoCreate.min.css" type="text/css" />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossorigin="anonymous" />    
+
+</head>
+<body class="padding:20px">
+
+  
+  <button data-backup_type="import" id="import_btn">Import</button>
+  
+  <button data-backup_type="export" id="export_btn">Export</button>
+
+  <script>
+    var config = {
+      apiKey: 'c2b08663-06e3-440c-ef6f-13978b42883a',
+      securityKey: 'f26baf68-e3a9-45fc-effe-502e47116265',
+      organization_Id: '5de0387b12e200ea63204d6c'
+    }
+  </script>
+ 
+  <script src="https://server.cocreate.app/js/CoCreate.min.js"></script>
+
+  <script>
+    let button = document.getElementById('import_btn')
+    let selectedFile = null;
+    button.addEventListener('click', function() {
+      var input = document.createElement('input');
+      input.type = 'file';
+      
+      input.onchange = e => { 
+         var file = e.target.files[0];
+         selectedFile = e.target.files[0];
+         
+         CoCreate.importCollection({
+           collection: 'import_test',
+           file: file
+         })
+      }
+      
+      input.click();
+    })
+    
+    
+    let exportBtn = document.getElementById('export_btn')
+    exportBtn.addEventListener('click', function() {
+      CoCreate.exportCollection({
+        collection: 'users',
+        export_type: 'csv'
+      })
+    })
+  </script>
+
+</body>
+</html>
