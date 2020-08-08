@@ -15,14 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossorigin="anonymous" />  
     
   </head>
-  <style>
-  tbody > tr:hover {
-    background:#fafafa;  
-  }
-  th, td {
-    border-bottom: 1px solid #e0e0e0;
-  }
-  </style>
+
   <body class="width:fit-content">
     <!-- Navbar -->
     <div class="nav display:flex align-items:center width:100vw bg:light-gray position:sticky left:0" 
@@ -121,25 +114,27 @@
 			 </ul>
     </div>
       
-    <!-- Main Content with Modal Viewport -->  
+    <!-- Modal Viewport -->  
     <div class="position:fixed margin-top:50px" data-main_content_id="content" id="modal-viewport"></div>
+   
+    <!-- Main Content -->  
     <div data-main_content_id="content">
       <table class="width:100%">
-            <tr>
-              <td class="position:relative name min-width:300px position:sticky top:0 bg:white padding:10px padding-top:0">
+            <tr class="">
+              <td class="position:sticky top:0 name min-width:300px top:0 bg:white padding:10px padding-top:0 border-bottom border-color:medium-gray">
         		  <input type="text" class="floating-label"
                	  data-filter_name="name" 
                	  data-value_type="string"
                	  data-filter_operator=""
        			      data-template_id="datatable" 
                	  placeholder="Name">
-                  <span class="position:absolute bottom:18px right:20px float:right font-size:18px z-index:6" >
+                  <span class="position:absolute bottom:18px right:20px float:right font-size:18px z-index:6">
                     <a data-order_by="name" value="desc" data-template_id="datatable" data-show="#asc1" data-hide="#sort1" id="sort">
                       <i class="fas fa-sort"></i>
                     </a>
                   </span>
               </td>
-              <td class="position:relative min-width:300px position:sticky top:0 bg:white padding:10px padding-top:0">
+              <td class="position:sticky top:0 min-width:300px bg:white padding:10px padding-top:0 border-bottom border-color:medium-gray">
           		  <input type="text" class="floating-label"
                	  data-filter_name="_id" 
                	  data-value_type="string"
@@ -165,44 +160,44 @@
           data-template_id="datatable"
           data-pass_to="me1234">
           
-          <tr class="template border:bottom">
-  					<td class="padding:10px">
-  					  <div class="minwidth-200">
+          <tr class="template  background:gray:hover">
+  					<td class="padding:10px border-bottom border-color:medium-gray background:gray:hover">
+  					  <div class="min-width:200px">
     					  <div class="icon-wrapper">
     						  <span data-document_id="" name="icon"></span>
     					  </div>
     					  <div>
       						<a data-window_url="render.html" 
       						   data-pass_collection="module_activity"
-      						   data-pass_module_id=""
+      						   data-pass_document_id=""
       						   data-pass_prefix="form_"
       						   data-pass_to="form-fields" 
       						   data-modal_width="320px" 
       						   data-modal_color="#229954">
-      						  <h4 name="name" class="noMargins">Name</h4>
+      						  <h4 data-pass_id="me1234" name="name">Name</h4>
       						  <div data-pass_collection="modules"
-          						   data-pass_module_id=""
+          						   data-pass_document_id=""
       						       data-pass_prefix="form_"
           						   data-pass_to="render"
           						   data-pass_id="render">
       						    
       						  </div>
       						</a>
-      						  <h5 name="description" class="noMargins"></h5>
+      						  <h5 name="description"></h5>
     					  </div>
   					  </div>
   					</td>
-  					<td class="padding:10px">
+  					<td class="padding:10px border-bottom border-color:medium-gray">
   					  <a data-window_url="render.html"
-  					     data-pass_module_id=""
+  					     data-pass_document_id=""
   					     data-pass_prefix="form_"
   					     data-pass_collection="module_activity"
   						   data-pass_to="form-fields" 
   						   data-modal_width="320px" 
   						   data-modal_color="#229954">
-  					     <b name="document_id">Module Id</b>
+  					     <b data-pass_id="me1234" name="_id">Module Id</b>
   						    <div data-pass_collection="module_activity"
-      						   data-pass_module_id=""
+      						   data-pass_document_id=""
   						       data-pass_prefix="form_"
       						   data-pass_to="render">
     						  </div>
@@ -215,7 +210,7 @@
   
   	</div>
 
-	  <a target="modal" href="render.html" 
+	  <button target="modal" href="render.html" 
 	     data-pass_collection="modules"
 	     data-pass_document_id=""
 	     data-pass_prefix="form_"
@@ -225,7 +220,7 @@
 	     data-modal_color="#229954"
 	     class="position:fixed bottom:15px right:15px padding:15px bg:blue grow-hover round z-index:8" data-pass_id="render">
 	    <i class="fa fa-plus"></i>
-		</a>
+		</button>
   
     
     <script>
