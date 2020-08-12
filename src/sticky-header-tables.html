@@ -12,16 +12,34 @@
     <link rel="stylesheet" href="https://server.cocreate.app/css/CoCreate.min.css" type="text/css" />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" crossorigin="anonymous" />  
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous" />  
   </head>
+  
+    <style>
+      a[data-toggle_order]:before {
+        font-family: 'Font Awesome 5 Free';
+        content: "\f0dc";
+        font-weight: 900;
+      }
+      a[data-toggle_order=asc]:before {
+        font-family: 'Font Awesome 5 Free';
+        content: "\f0de";
+        font-weight: 900;
+      }
+      a[data-toggle_order=desc]:before {
+        font-family: 'Font Awesome 5 Free';
+        content: "\f0dd";
+        font-weight: 900;   
+      }
+    </style>
 
-  <body class="width:fit-content">
+  <body class="width:fit-content cocreate-scroll">
     <!-- Navbar -->
-    <div class="nav display:flex align-items:center width:100vw bg:light-gray position:sticky left:0" 
-      data-main_content_id="content" 
-      data-scroll_effect="hide-nav" 
-      data-scroll_position="50">
+    <div class="nav display:flex align-items:center bg:light-gray position:sticky left:0 width:100vw" 
+      data-main_content_id="content"
+      data-scroll_effect="hide-nav"
+      data-scroll_up="1" 
+      data-scroll_down="1">
 
       <!-- Menu Icon Animations -->
       <a class="nav-toggle menu_icon--Vdots" data-toggle_sidenav="menuL">
@@ -118,36 +136,36 @@
     <div class="position:fixed margin-top:50px" data-main_content_id="content" id="modal-viewport"></div>
    
     <!-- Main Content -->  
-    <div data-main_content_id="content">
-      <table class="width:100%">
-            <tr class="">
-              <td class="position:sticky top:0 name min-width:300px top:0 bg:white padding:10px padding-top:0 border-bottom border-color:medium-gray">
-        		  <input type="text" class="floating-label"
-               	  data-filter_name="name" 
-               	  data-value_type="string"
-               	  data-filter_operator=""
-       			      data-template_id="datatable" 
-               	  placeholder="Name">
-                  <span class="position:absolute bottom:18px right:20px float:right font-size:18px z-index:6">
-                    <a data-order_by="name" value="desc" data-template_id="datatable" data-show="#asc1" data-hide="#sort1" id="sort">
-                      <i class="fas fa-sort"></i>
-                    </a>
-                  </span>
-              </td>
-              <td class="position:sticky top:0 min-width:300px bg:white padding:10px padding-top:0 border-bottom border-color:medium-gray">
-          		  <input type="text" class="floating-label"
-               	  data-filter_name="_id" 
-               	  data-value_type="string"
-               	  data-filter_operator=""
-       			      data-template_id="datatable" 
-               	  placeholder="Document_id"/>
-                  <span class="position:absolute bottom:18px right:20px float:right font-size:18px z-index:6" >
-                    <a data-order_by="name" value="desc" data-template_id="datatable" data-show="#asc" data-hide="#sort" id="sort">
-                      <i class="fas fa-sort"></i>
-                    </a>
-                  </span>
-              </td>
-            </tr>
+    <div data-main_content_id="content" class="padding:5px">
+      <table class="width:100% border-collapse:collapse">
+        <tr class="border-bottom:1px_solid_darkgray">
+          <td class="position:sticky top:0 min-width:300px bg:white padding-top:0 padding:10px">
+    		    <input type="text" class="floating-label"
+           	  data-filter_name="name" 
+           	  data-value_type="string"
+           	  data-filter_operator=""
+   			      data-template_id="datatable" 
+           	  placeholder="Name">
+              <span class="position:absolute bottom:18px right:20px float:right font-size:18px z-index:6">
+                <!-- need a solution to update toggle value="desc|asc" and define and upadte icons... show hide works great but to much html and orderby only has 2 values -->
+                <a data-order_by="name" data-toggle_order data-template_id="datatable">
+                  <i></i>
+                </a>
+              </span>
+          </td>
+          <td class="position:sticky top:0 min-width:300px bg:white padding:10px padding-top:0">
+      		  <input type="text" class="floating-label"
+           	  data-filter_name="_id" 
+           	  data-value_type="string"
+           	  data-filter_operator=""
+   			      data-template_id="datatable" 
+           	  placeholder="Document_id"/>
+              <span class="position:absolute bottom:18px right:20px float:right font-size:18px z-index:6" >
+                <a data-order_by="_id" value="" data-toggle_order="true" data-template_id="datatable">
+                </a>
+              </span>
+          </td>
+        </tr>
 
         <tbody
           data-fetch_collection="users"
@@ -160,8 +178,8 @@
           data-template_id="datatable"
           data-pass_to="me1234">
           
-          <tr class="template  background:gray:hover">
-  					<td class="padding:10px border-bottom border-color:medium-gray background:gray:hover">
+          <tr class="template background:gainsboro:hover border-bottom:1px_solid_darkgray">
+  					<td class="padding:10px">
   					  <div class="min-width:200px">
     					  <div class="icon-wrapper">
     						  <span data-document_id="" name="icon"></span>
@@ -187,7 +205,7 @@
     					  </div>
   					  </div>
   					</td>
-  					<td class="padding:10px border-bottom border-color:medium-gray">
+  					<td class="padding:10px">
   					  <a data-window_url="render.html"
   					     data-pass_document_id=""
   					     data-pass_prefix="form_"
@@ -218,7 +236,7 @@
 	     data-modal_width="320px" 
 	     data-modal_height="100%"
 	     data-modal_color="#229954"
-	     class="position:fixed bottom:15px right:15px padding:15px bg:blue grow-hover round z-index:8" data-pass_id="render">
+	     class="position:fixed bottom:15px right:15px padding:15px bg:blue grow-hover border-radius:50% z-index:8" data-pass_id="render">
 	    <i class="fa fa-plus"></i>
 		</button>
   
