@@ -60,10 +60,10 @@ function initTables(container) {
       continue;
     }
     
-    if (CoCreateUtils.getInitialized(table)) {
+    if (CoCreateInit.getInitialized(table)) {
 			continue;
 		}
-		CoCreateUtils.setInitialized(table)
+		CoCreateInit.setInitialized(table)
 
     var availableOrders = getAvailableOrders(tableId);
     
