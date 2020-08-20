@@ -32,7 +32,7 @@ All updates to this library are documented in our [CHANGELOG](https://github.com
 <a name="roadmap"></a>
 # Roadmap
 
-If you are interested in the future direction of this project, please take a look at our open [issues](https://github.com/CoCreate-app/CoCreate-datatables/issues) and [pull requests](https://github.com/CoCreate-app/CoCreate-datatables/pulls). We would love to hear your feedback.
+If you are interested in the future direction of this project, please take a look at our open [issues](https://github.com/CoCreate-app/CoCreate-datatable/issues) and [pull requests](https://github.com/CoCreate-app/CoCreate-datatable/pulls). We would love to hear your feedback.
 
 
 <a name="about"></a>
@@ -47,7 +47,7 @@ CoCreate-datatables.net is maintained and funded by CoCreate. The names and logo
 <a name="contribute"></a>
 # How to Contribute
 
-We encourage contribution to our libraries (you might even score some nifty swag), please see our [CONTRIBUTING](https://github.com/CoCreate-app/CoCreate-datatables/blob/master/CONTRIBUTING.md) guide for details.
+We encourage contribution to our libraries (you might even score some nifty swag), please see our [CONTRIBUTING](https://github.com/CoCreate-app/CoCreate-datatable/blob/master/CONTRIBUTING.md) guide for details.
 
 # License
-[The MIT License (MIT)](https://github.com/CoCreate-app/CoCreate-datatables/blob/master/LICENSE)
+[The MIT License (MIT)](https://github.com/CoCreate-app/CoCreate-datatable/blob/master/LICENSE)
