@@ -12,7 +12,7 @@ module.exports = {
             document_id: "",
             key: "html",
             data:{
-                name: "datatable Doc",
+                name: "Datatable Doc",
             }
         },
     ],
