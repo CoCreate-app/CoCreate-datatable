@@ -12,7 +12,11 @@ module.exports = {
 
   // Path to your entry point. From this file Webpack will begin his work
   entry: {
+<<<<<<< HEAD
     'CoCreate-dataTables': './src/CoCreate-dataTables.js',
+=======
+    'CoCreate-datatable': './src/CoCreate-datatable.js',
+>>>>>>> a76edd3be0399048704d4c15becec8a6063043d5
   },
 
  // Path and filename of your result bundle.
@@ -22,7 +26,11 @@ module.exports = {
     filename: isProduction ? '[name].min.js' : '[name].js',
     libraryTarget: 'umd',
     libraryExport: 'default',
+<<<<<<< HEAD
     library: ['CoCreate', 'dataTables'],
+=======
+    library: ['CoCreate', 'datatable'],
+>>>>>>> a76edd3be0399048704d4c15becec8a6063043d5
     globalObject: "this",
   },
 
