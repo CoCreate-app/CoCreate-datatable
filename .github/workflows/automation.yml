@@ -64,4 +64,4 @@ jobs:
         with:
           aws-key-id: ${{ secrets.AWSACCESSKEYID }}
           aws-access-key: ${{ secrets.AWSSECERTACCESSKEY }}
-          source: './dist/CoCreate-datatable.min.js'
+          source: './dist/CoCreate-dataTables.min.js'

@@ -1,19 +1,19 @@
-# Contributing to CoCreate-datatable
+# Contributing to CoCreate-dataTables
 
-This project is work of [many contributors](https://github.com/CoCreate-app/CoCreate-datatable/graphs/contributors).
-You're encouraged to submit [pull requests](https://github.com/CoCreate-app/CoCreate-datatable/pulls),
-[propose features and discuss issues](https://github.com/CoCreate-app/CoCreate-datatable/issues).
+This project is work of [many contributors](https://github.com/CoCreate-app/CoCreate-dataTables/graphs/contributors).
+You're encouraged to submit [pull requests](https://github.com/CoCreate-app/CoCreate-dataTables/pulls),
+[propose features and discuss issues](https://github.com/CoCreate-app/CoCreate-dataTables/issues).
 
 In the examples below, substitute your Github username for `contributor` in URLs.
 
 ## Fork the Project
 
-Fork the [project on Github](https://github.com/CoCreate-app/CoCreate-datatable) and check out your copy.
+Fork the [project on Github](https://github.com/CoCreate-app/CoCreate-dataTables) and check out your copy.
 
 ```
-git datatable https://github.com/contributor/CoCreate-datatable.git
-cd CoCreate-datatable
-git remote add upstream https://github.com/CoCreate-app/CoCreate-datatable.git
+git dataTables https://github.com/contributor/CoCreate-dataTables.git
+cd CoCreate-dataTables
+git remote add upstream https://github.com/CoCreate-app/CoCreate-dataTables.git
 ```
 
 ## Create a Topic Branch
@@ -75,7 +75,7 @@ git push origin my-feature-branch
 
 ## Make a Pull Request
 
-Go to [https://github.com/CoCreate-app/CoCreate-datatable](https://github.com/CoCreate-app/CoCreate-datatable) and select your feature branch.
+Go to [https://github.com/CoCreate-app/CoCreate-dataTables](https://github.com/CoCreate-app/CoCreate-dataTables) and select your feature branch.
 Click the 'Pull Request' button and fill out the form. Pull requests are usually reviewed within a few days.
 
 ## Rebase

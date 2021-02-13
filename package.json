@@ -1,8 +1,8 @@
 {
-  "name": "@cocreate/datatable",
+  "name": "@cocreate/dataTables",
   "version": "1.0.0",
-  "description": "A simple datatable component in vanilla javascript. Easily configured using HTML5 data-attributes and/or JavaScript API.",
-  "keywords": ["datatable","cocreate","low-code-framework","no-code-framework","cocreatejs","cocreatejs-component","cocreate-framework","no-code","low-code","collaborative-framework","realtime","realtime-framework","collaboration","shared-editing","html5-framework","javascript-framework"],
+  "description": "A simple dataTables component in vanilla javascript. Easily configured using HTML5 data-attributes and/or JavaScript API.",
+  "keywords": ["dataTables","cocreate","low-code-framework","no-code-framework","cocreatejs","cocreatejs-component","cocreate-framework","no-code","low-code","collaborative-framework","realtime","realtime-framework","collaboration","shared-editing","html5-framework","javascript-framework"],
   "publishConfig": {
     "access": "public"
   },
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CoCreate-app/CoCreate-datatable.git"
+    "url": "git+https://github.com/CoCreate-app/CoCreate-dataTables.git"
   },
   "author": "CoCreate LLC",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CoCreate-app/CoCreate-datatable/issues"
+    "url": "https://github.com/CoCreate-app/CoCreate-dataTables/issues"
   },
-  "homepage": "https://cocreate.app/docs/datatable",
+  "homepage": "https://cocreate.app/docs/dataTables",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
