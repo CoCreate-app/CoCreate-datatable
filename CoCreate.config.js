@@ -9,23 +9,23 @@ module.exports = {
     sources: [{
             path: "./docs/index.html",
             collection: "files",
-            document_id: "6028236c71064611a678a19d",
+            document_id: "6025f32d7a78a543a77c9222",
             key: "html",
             data:{
-                name: "DataTables Doc",
+                name: "Datatable Doc",
             }
         },
     ],
    
     crud: [{
             collection: "routes",
-            document_id: "6028236c71064611a678a19c",
+            document_id: "6025f32d7a78a543a77c9221",
             data:{
                 collection: "files",
-                document_id: "6028236c71064611a678a19d",
+                document_id: "6025f32d7a78a543a77c9222",
                 name: "html",
                 domains: ["cocreate.app", "server.cocreate.app", "ws.cocreate.app"],
-                route: "/docs/dataTables",
+                route: "/docs/datatable",
             }
         }
     ],
