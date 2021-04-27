@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.0.2...v1.0.3) (2021-04-27)
+
+
+### Bug Fixes
+
+* add host in docs ([35130a8](https://github.com/CoCreate-app/CoCreate-datatable/commit/35130a8790582008d7c79e7ad1fb47eb8746c049))
+
 ## [1.0.2](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.0.1...v1.0.2) (2021-04-27)
 
 
