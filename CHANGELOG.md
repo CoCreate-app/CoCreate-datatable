@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.0.3...v1.0.4) (2021-05-08)
+
+
+### Bug Fixes
+
+* add css auto parse and save to docs. ([e250f71](https://github.com/CoCreate-app/CoCreate-datatable/commit/e250f7184202e8ad16e9deca3c8ec146c64ecec1))
+
 ## [1.0.3](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.0.2...v1.0.3) (2021-04-27)
 
 
