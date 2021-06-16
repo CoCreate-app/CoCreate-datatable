@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.0.4...v1.0.5) (2021-06-16)
+
+
+### Bug Fixes
+
+* added header for seo ([6f24523](https://github.com/CoCreate-app/CoCreate-datatable/commit/6f245237a6a5f7a4c9ce23f45d1a613b1a6f3bdd))
+
 ## [1.0.4](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.0.3...v1.0.4) (2021-05-08)
 
 
