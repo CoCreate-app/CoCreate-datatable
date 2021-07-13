@@ -1,3 +1,11 @@
+## [1.0.12](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.0.11...v1.0.12) (2021-07-13)
+
+
+### Bug Fixes
+
+* add yarn lockfile to git ignore ([db81fb4](https://github.com/CoCreate-app/CoCreate-datatable/commit/db81fb47926f6e5724de8f41527877df7cf47ef1))
+* remove yarn.lock ([4ccaa81](https://github.com/CoCreate-app/CoCreate-datatable/commit/4ccaa81e028af624fdafd9e635764b216df0facb))
+
 ## [1.0.11](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.0.10...v1.0.11) (2021-07-10)
 
 
