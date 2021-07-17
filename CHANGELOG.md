@@ -1,3 +1,11 @@
+## [1.0.15](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.0.14...v1.0.15) (2021-07-17)
+
+
+### Bug Fixes
+
+* workflows ([eca04da](https://github.com/CoCreate-app/CoCreate-datatable/commit/eca04da32dbced09655d3a917771fd8b2da3db82))
+* workflows ([660e5d3](https://github.com/CoCreate-app/CoCreate-datatable/commit/660e5d379bb81b2842553badec055637e61b3482))
+
 ## [1.0.14](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.0.13...v1.0.14) (2021-07-17)
 
 
