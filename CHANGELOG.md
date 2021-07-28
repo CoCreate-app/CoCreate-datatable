@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.0.15...v1.1.0) (2021-07-28)
+
+
+### Bug Fixes
+
+* remove data- from fetch, pass and filter ([2b4c004](https://github.com/CoCreate-app/CoCreate-datatable/commit/2b4c0042d8957d847709e8c26e33e6df4f647c40))
+
+
+### Features
+
+* add new is{attribute} system and remove data- from attributtes ([d4d02e8](https://github.com/CoCreate-app/CoCreate-datatable/commit/d4d02e8daf78ed932de160a0be828ac6d2ef7a73))
+
 ## [1.0.15](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.0.14...v1.0.15) (2021-07-17)
 
 
