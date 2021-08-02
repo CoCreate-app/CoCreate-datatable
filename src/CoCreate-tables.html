@@ -16,17 +16,17 @@
 	</head>
 	
 		<style>
-			a[data-toggle_order]:before {
+			a[toggle-order]:before {
 				font-family: 'Font Awesome 5 Free';
 				content: "\f0dc";
 				font-weight: 900;
 			}
-			a[data-toggle_order=asc]:before {
+			a[toggle-order=asc]:before {
 				font-family: 'Font Awesome 5 Free';
 				content: "\f0de";
 				font-weight: 900;
 			}
-			a[data-toggle_order=desc]:before {
+			a[toggle-order=desc]:before {
 				font-family: 'Font Awesome 5 Free';
 				content: "\f0dd";
 				font-weight: 900;   
@@ -37,12 +37,12 @@
 		<!-- Navbar -->
 		<div class="nav display:flex align-items:center background:whitesmoke position:sticky left:0 width:100vw" 
 			data-main_content_id="content"
-			data-scroll_effect="hide-nav"
-			data-scroll_up="1" 
-			data-scroll_down="1">
+			scroll-effect="hide-nav"
+			scroll-up="1" 
+			scroll-down="1">
 
 			<!-- Menu Icon Animations -->
-			<a class="nav-toggle menu_icon--Vdots" data-toggle_sidenav="menuL">
+			<a class="nav-toggle menu_icon--Vdots" toggle-sidenav="menuL">
 				<div class="circle"></div>
 				<div class="circle"></div>
 				<div class="circle"></div>
@@ -148,7 +148,7 @@
 							placeholder="Name">
 							<span class="position:absolute bottom:18px right:20px float:right font-size:18px z-index:6">
 								<!-- need a solution to update toggle value="desc|asc" and define and upadte icons... show hide works great but to much html and orderby only has 2 values -->
-								<a order-by="name" data-toggle_order template_id="datatable">
+								<a order-by="name" toggle-order template_id="datatable">
 									<i></i>
 								</a>
 							</span>
@@ -161,7 +161,7 @@
 							template_id="datatable" 
 							placeholder="Document_id"/>
 							<span class="position:absolute bottom:18px right:20px float:right font-size:18px z-index:6" >
-								<a order-by="_id" value="" data-toggle_order="true" template_id="datatable">
+								<a order-by="_id" value="" toggle-order="true" template_id="datatable">
 								</a>
 							</span>
 					</td>
