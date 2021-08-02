@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.0...v1.1.1) (2021-08-02)
+
+
+### Bug Fixes
+
+* remove data- from attributes ([8078743](https://github.com/CoCreate-app/CoCreate-datatable/commit/8078743184edfacafb4e455c7a3835a57162f95c))
+* update data-fullscreen to fullscreen ([769e12f](https://github.com/CoCreate-app/CoCreate-datatable/commit/769e12f5582384be8e761a2c60a4993ac54fffc6))
+
 # [1.1.0](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.0.15...v1.1.0) (2021-07-28)
 
 
