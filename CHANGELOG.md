@@ -1,3 +1,12 @@
+## [1.1.3](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.2...v1.1.3) (2021-08-13)
+
+
+### Bug Fixes
+
+* remove data- from datatable btns ([e2567ba](https://github.com/CoCreate-app/CoCreate-datatable/commit/e2567bac17a854313c8eceb0cfd079ca39c3a205))
+* replace data-transform with toggle ([588a7ef](https://github.com/CoCreate-app/CoCreate-datatable/commit/588a7efa768b27fe577553617208ab9074c04bd8))
+* update to  docs ([cfaa1cf](https://github.com/CoCreate-app/CoCreate-datatable/commit/cfaa1cf999c6c8093c75859402bbc9d394cd528b))
+
 ## [1.1.2](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.1...v1.1.2) (2021-08-12)
 
 
