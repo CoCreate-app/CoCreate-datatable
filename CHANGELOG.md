@@ -1,3 +1,11 @@
+## [1.1.4](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.3...v1.1.4) (2021-08-14)
+
+
+### Bug Fixes
+
+* remove data- from dnd attributes ([c297924](https://github.com/CoCreate-app/CoCreate-datatable/commit/c29792440e0ed9b7914c3b8e45bb91a00b546451))
+* rename data-element_id to element_id ([f9a9603](https://github.com/CoCreate-app/CoCreate-datatable/commit/f9a960316ab90dd07a9bbdccdc07ff2a076361d7))
+
 ## [1.1.3](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.2...v1.1.3) (2021-08-13)
 
 
