@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.6...v1.1.7) (2021-08-22)
+
+
+### Bug Fixes
+
+* removed data- from main-content, clone, filter-value_type ([50d6afc](https://github.com/CoCreate-app/CoCreate-datatable/commit/50d6afc9ac63c5f391bb6ec21e6793a27de63175))
+
 ## [1.1.6](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.5...v1.1.6) (2021-08-22)
 
 
