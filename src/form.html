@@ -56,7 +56,7 @@
 
 <body>
     <div id="modal-viewport" class="hidden"></div>
-    <div data-main_content_id="content" class="nav width:100% display:flex align-items-center bg-light-gray" scroll-effect="hide-nav" scroll-position="50">
+    <div main-content_id="content" class="nav width:100% display:flex align-items-center bg-light-gray" scroll-effect="hide-nav" scroll-position="50">
       <!--<a href="#" class="logo">Navbar</a>-->
       <!--<a class="nav-toggle menu_icon--Vdots" toggle-sidenav="menuL">-->
       <!--  <div class="circle"></div>-->
@@ -97,7 +97,7 @@
   			<li class="margin-right:15px"><a collection="module_activity" document_id="" pass_id="form-fields" class="delete-document btn-modal-close"><i class="far fa-trash-alt"></i></a></li>
 			 </ul>
     </div>
-		<div class="padding:20px" data-main_content_id="content">
+		<div class="padding:20px" main-content_id="content">
 
         <form realtime="true" collection="module_activity" class="mbottom:75">
 
@@ -207,7 +207,7 @@
                 <span class="display:inline-block">
                   <input collection="module_activity" pass_id="form-fields" document_id="" name="clone-name" id="stage-name" class="input_field" placeholder="Tasklist">
                 </span>
-                <span class="float-right display:inline-block"><a data-clone_id="tasklist" class="deleteBtn"><i class="fas fa-times"></i></a></span>
+                <span class="float-right display:inline-block"><a clone_id="tasklist" class="deleteBtn"><i class="fas fa-times"></i></a></span>
               </div>
                 <div class="border-bottom border-color-extra-medium-gray">
                 <div class="display:flex align-items-center padding:0px_15px">
@@ -225,12 +225,12 @@
                       <div class="flex-grow-1">
                         <input class="floating-label" document_id="5d8c79e7e4be424681b5e48d" name="taskname"  placeholder="Task Name">
                       </div>
-                      <a data-clone_id="task-item" class="margin:15px-left font-size:20px deleteBtn"><i class="far fa-trash-alt"></i></a>
+                      <a clone_id="task-item" class="margin:15px-left font-size:20px deleteBtn"><i class="far fa-trash-alt"></i></a>
                     </div>
                 </div>
                 </div>
               <div class="margin:0px_15px padding:15px_0px">
-                <a data-clone_id="task-item" class="cloneBtn noDrag" style="display: block"><i class="fas fa-plus"></i> Add Task</a>  
+                <a clone_id="task-item" class="cloneBtn noDrag" style="display: block"><i class="fas fa-plus"></i> Add Task</a>  
               </div>
             </div>
 
@@ -239,7 +239,7 @@
     </div><!-- saveFetch -->
 
           <div style=width="100%" class="noDrag">
-            <input id="tasklist-name"><a data-clone_id="tasklist" class="cloneBtn noDrag" style="display: block" data-clone_name="tasklist-name">New Tasklist</a>  
+            <input id="tasklist-name"><a clone_id="tasklist" class="cloneBtn noDrag" style="display: block" clone-name="tasklist-name">New Tasklist</a>  
           </div>
           
           <!--<div class="display:flex align-items-center padding:20px-top">-->

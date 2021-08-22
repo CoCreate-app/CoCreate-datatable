@@ -36,7 +36,7 @@
 	<body class="width:fit-content overflow:overlay">
 		<!-- Navbar -->
 		<div class="nav display:flex align-items:center background:whitesmoke position:sticky left:0 width:100vw" 
-			data-main_content_id="content"
+			main-content_id="content"
 			scroll-effect="hide-nav"
 			scroll-up="1" 
 			scroll-down="1">
@@ -133,16 +133,16 @@
 		</div>
 			
 		<!-- Modal Viewport -->  
-		<div class="position:fixed margin-top:50px" data-main_content_id="content" id="modal-viewport"></div>
+		<div class="position:fixed margin-top:50px" main-content_id="content" id="modal-viewport"></div>
 	 
 		<!-- Main Content -->  
-		<div data-main_content_id="content" class="padding:5px">
+		<div main-content_id="content" class="padding:5px">
 			<table class="width:100% border-collapse:collapse">
 				<tr class="border-bottom:1px_solid_darkgray">
 					<td class="position:sticky top:0 background:white padding-top:0 padding:10px ">
 						<input type="text" class="floating-label"
 							filter-name="name" 
-							data-value_type="string"
+							filter-value_type="string"
 							filter-operator=""
 							template_id="datatable" 
 							placeholder="Name">
@@ -156,7 +156,7 @@
 					<td class="position:sticky top:0 background:white padding:10px padding-top:0">
 						<input type="text" class="floating-label"
 							filter-name="_id" 
-							data-value_type="string"
+							filter-value_type="string"
 							filter-operator=""
 							template_id="datatable" 
 							placeholder="Document_id"/>
