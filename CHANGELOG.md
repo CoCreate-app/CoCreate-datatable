@@ -1,3 +1,10 @@
+## [1.1.10](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.9...v1.1.10) (2021-08-31)
+
+
+### Bug Fixes
+
+* update dependencies ([14e3718](https://github.com/CoCreate-app/CoCreate-datatable/commit/14e37180f77e2289dbe211b0bde87ed1dfcc3aa1))
+
 ## [1.1.9](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.8...v1.1.9) (2021-08-27)
 
 
