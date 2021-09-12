@@ -1,3 +1,10 @@
+## [1.1.17](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.16...v1.1.17) (2021-09-12)
+
+
+### Bug Fixes
+
+* update sidenav to use resize and toggle ([f6f2ac8](https://github.com/CoCreate-app/CoCreate-datatable/commit/f6f2ac8b70288b33192ceb7ffac59c0138fe7d42))
+
 ## [1.1.16](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.15...v1.1.16) (2021-09-09)
 
 
