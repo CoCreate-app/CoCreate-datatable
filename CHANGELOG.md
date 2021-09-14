@@ -1,3 +1,10 @@
+## [1.1.19](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.18...v1.1.19) (2021-09-14)
+
+
+### Bug Fixes
+
+* add cocreate.app to domains ([b292244](https://github.com/CoCreate-app/CoCreate-datatable/commit/b29224451d89e406d4da917f61e78a7fa3ddc496))
+
 ## [1.1.18](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.17...v1.1.18) (2021-09-13)
 
 
