@@ -1,6 +1,6 @@
 # CoCreate-datatable
 
-A simple datatable component in vanilla javascript. Easily configured using HTML5 data-attributes and/or JavaScript API. Take it for a spin in our [playground!](https://cocreate.app/docs/datatable)
+A simple datatable component in vanilla javascript. Easily configured using HTML5 attributes and/or JavaScript API. Take it for a spin in our [playground!](https://cocreate.app/docs/datatable)
 
 ![minified](https://img.badgesize.io/https://cdn.cocreate.app/datatable/latest/CoCreate-datatable.min.js?style=flat-square&label=minified&color=orange)
 ![gzip](https://img.badgesize.io/https://cdn.cocreate.app/datatable/latest/CoCreate-datatable.min.js?compression=gzip&style=flat-square&label=gzip&color=yellow)
