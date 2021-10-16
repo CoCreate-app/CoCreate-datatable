@@ -1,3 +1,10 @@
+## [1.1.33](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.32...v1.1.33) (2021-10-16)
+
+
+### Bug Fixes
+
+* update socket package to fix bug in docs ([86190a5](https://github.com/CoCreate-app/CoCreate-datatable/commit/86190a56019c77897971b43b325e1d58792b2cd6))
+
 ## [1.1.32](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.31...v1.1.32) (2021-10-15)
 
 
