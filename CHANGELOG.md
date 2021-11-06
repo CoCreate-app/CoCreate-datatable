@@ -1,3 +1,10 @@
+## [1.1.39](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.38...v1.1.39) (2021-11-06)
+
+
+### Bug Fixes
+
+* removed cdn from workflows as modules dont have javascript and are built using existing componennts ([0865480](https://github.com/CoCreate-app/CoCreate-datatable/commit/08654801d5ef5af590ed917bae52c95def97cdc9))
+
 ## [1.1.38](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.37...v1.1.38) (2021-11-04)
 
 
