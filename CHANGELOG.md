@@ -1,3 +1,10 @@
+## [1.1.45](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.44...v1.1.45) (2021-11-19)
+
+
+### Bug Fixes
+
+* remove serch-template class from fetch and filter inputs ([ab291b5](https://github.com/CoCreate-app/CoCreate-datatable/commit/ab291b58bd262ac70078611b8e0554acbd37d9b3))
+
 ## [1.1.44](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.43...v1.1.44) (2021-11-18)
 
 
