@@ -1,3 +1,10 @@
+## [1.1.57](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.56...v1.1.57) (2021-12-23)
+
+
+### Bug Fixes
+
+* renamed filter-value_type to filter-value-type ([37dfd4d](https://github.com/CoCreate-app/CoCreate-datatable/commit/37dfd4db190aef1c3486c31b9661eb31659b66bf))
+
 ## [1.1.56](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.55...v1.1.56) (2021-12-15)
 
 
