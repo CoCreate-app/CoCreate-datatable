@@ -1,3 +1,10 @@
+## [1.1.58](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.57...v1.1.58) (2021-12-24)
+
+
+### Bug Fixes
+
+* add action deleteDocuments ([fa53e20](https://github.com/CoCreate-app/CoCreate-datatable/commit/fa53e20d0a8afc3ebbf23d1eec05eda305fb1508))
+
 ## [1.1.57](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.56...v1.1.57) (2021-12-23)
 
 
