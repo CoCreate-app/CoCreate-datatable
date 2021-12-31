@@ -1,3 +1,10 @@
+## [1.1.59](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.58...v1.1.59) (2021-12-31)
+
+
+### Bug Fixes
+
+* added chart=chartjs as a selector. cleaned demo ([4da3044](https://github.com/CoCreate-app/CoCreate-datatable/commit/4da3044648824670f89f2b6413497dbca2d4368c))
+
 ## [1.1.58](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.57...v1.1.58) (2021-12-24)
 
 
