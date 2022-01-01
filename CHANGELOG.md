@@ -1,3 +1,10 @@
+## [1.1.60](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.59...v1.1.60) (2022-01-01)
+
+
+### Bug Fixes
+
+* removed data- from attributes ([17acc25](https://github.com/CoCreate-app/CoCreate-datatable/commit/17acc2598a2bff7e31450a1a377218f67a6512e6))
+
 ## [1.1.59](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.58...v1.1.59) (2021-12-31)
 
 
