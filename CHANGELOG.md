@@ -1,3 +1,10 @@
+## [1.1.62](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.61...v1.1.62) (2022-01-16)
+
+
+### Bug Fixes
+
+* update class overflow:overlay to overflow:auto ([fef1838](https://github.com/CoCreate-app/CoCreate-datatable/commit/fef18388a7d2b90d9ab4c887720eb3805ac753b1))
+
 ## [1.1.61](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.60...v1.1.61) (2022-01-01)
 
 
