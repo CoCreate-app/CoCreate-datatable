@@ -1,3 +1,10 @@
+## [1.1.64](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.63...v1.1.64) (2022-02-03)
+
+
+### Bug Fixes
+
+* replaced show and hide class hidden with attribute hidden ([1a6251b](https://github.com/CoCreate-app/CoCreate-datatable/commit/1a6251b8c2e61e85f796473b8aa27885cfbf143c))
+
 ## [1.1.63](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.62...v1.1.63) (2022-02-01)
 
 
