@@ -1,3 +1,10 @@
+## [1.1.69](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.68...v1.1.69) (2022-03-21)
+
+
+### Bug Fixes
+
+* update class sortable to attribute sortable ([9c3dd92](https://github.com/CoCreate-app/CoCreate-datatable/commit/9c3dd9258fdd899faea28f81bd5eb0b12a5fd16d))
+
 ## [1.1.68](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.67...v1.1.68) (2022-02-24)
 
 
