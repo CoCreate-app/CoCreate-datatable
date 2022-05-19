@@ -1,3 +1,10 @@
+## [1.1.72](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.71...v1.1.72) (2022-05-19)
+
+
+### Bug Fixes
+
+* update document_id on link index.css ([da7f42a](https://github.com/CoCreate-app/CoCreate-datatable/commit/da7f42ac92fefb9b8d011a24b3d56068809595dc))
+
 ## [1.1.71](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.70...v1.1.71) (2022-05-06)
 
 
