@@ -1,3 +1,10 @@
+## [1.1.74](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.73...v1.1.74) (2022-06-02)
+
+
+### Bug Fixes
+
+* update padding of datables td element ([e679890](https://github.com/CoCreate-app/CoCreate-datatable/commit/e679890930a7ec2778e2930b619626278d4db5f3))
+
 ## [1.1.73](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.72...v1.1.73) (2022-05-23)
 
 
