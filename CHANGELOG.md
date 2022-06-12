@@ -1,3 +1,12 @@
+## [1.1.75](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.74...v1.1.75) (2022-06-12)
+
+
+### Bug Fixes
+
+* update dependencies ([06c0ec0](https://github.com/CoCreate-app/CoCreate-datatable/commit/06c0ec0521c3b847bba8232b1c9e71a37e6b41e3))
+* update docs css document_id ([2b47747](https://github.com/CoCreate-app/CoCreate-datatable/commit/2b47747e5fc50155064168101294dab8920c7f4d))
+* update modal btn to actions ([cc287c2](https://github.com/CoCreate-app/CoCreate-datatable/commit/cc287c24176bb3cf28a12ade7410fc5efa6a87ed))
+
 ## [1.1.74](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.73...v1.1.74) (2022-06-02)
 
 
