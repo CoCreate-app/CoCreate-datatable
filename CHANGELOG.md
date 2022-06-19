@@ -1,3 +1,10 @@
+## [1.1.77](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.76...v1.1.77) (2022-06-19)
+
+
+### Bug Fixes
+
+* update templates to use placeholder ([08bd353](https://github.com/CoCreate-app/CoCreate-datatable/commit/08bd35342437036508a7d560c876878389ed2a64))
+
 ## [1.1.76](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.75...v1.1.76) (2022-06-18)
 
 
