@@ -1,3 +1,10 @@
+## [1.1.78](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.77...v1.1.78) (2022-07-03)
+
+
+### Bug Fixes
+
+* update pass-fetch and pass-filter attributes ([ace4a9f](https://github.com/CoCreate-app/CoCreate-datatable/commit/ace4a9f49c15dbd0efc861c1267a401f6c597dbc))
+
 ## [1.1.77](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.76...v1.1.77) (2022-06-19)
 
 
