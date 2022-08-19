@@ -1,3 +1,10 @@
+## [1.1.79](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.78...v1.1.79) (2022-08-19)
+
+
+### Bug Fixes
+
+* renamed order-by and order-type to filter-order-name and filter-order-type ([27133aa](https://github.com/CoCreate-app/CoCreate-datatable/commit/27133aaf7d7b6abde5fead3dbcce91ad16e4bff8))
+
 ## [1.1.78](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.77...v1.1.78) (2022-07-03)
 
 
