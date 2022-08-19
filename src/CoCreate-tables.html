@@ -146,7 +146,7 @@
 							placeholder="Name">
 							<span class="position:absolute bottom:18px right:20px float:right font-size:18px z-index:6">
 								<!-- need a solution to update toggle value="desc|asc" and define and upadte icons... show hide works great but to much html and orderby only has 2 values -->
-								<a order-by="name" toggle-order template_id="datatable">
+								<a filter-order-name="name" toggle-order template_id="datatable">
 									<i></i>
 								</a>
 							</span>
@@ -157,7 +157,7 @@
 							template_id="datatable" 
 							placeholder="Document_id"/>
 							<span class="position:absolute bottom:18px right:20px float:right font-size:18px z-index:6" >
-								<a order-by="_id" value="" toggle-order="true" template_id="datatable">
+								<a filter-order-name="_id" value="" toggle-order="true" template_id="datatable">
 								</a>
 							</span>
 					</td>
@@ -166,8 +166,8 @@
 				<tbody
 					fetch-collection="modules"
 					fetch-count=""
-					order-by="name" 
-					order-type="asc"
+					filter-order-name="name" 
+					filter-order-type="asc"
 					template_id="datatable"
 					pass_to="me1234">
 					
