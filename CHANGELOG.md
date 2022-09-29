@@ -1,3 +1,10 @@
+## [1.1.81](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.80...v1.1.81) (2022-09-29)
+
+
+### Bug Fixes
+
+* config renameed to CoCreateConfig ([87a8da0](https://github.com/CoCreate-app/CoCreate-datatable/commit/87a8da0427f380e9b750e7e80c94ec4fb3ee1bff))
+
 ## [1.1.80](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.79...v1.1.80) (2022-09-01)
 
 
