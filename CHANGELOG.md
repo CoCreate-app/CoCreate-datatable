@@ -1,3 +1,10 @@
+## [1.1.87](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.86...v1.1.87) (2022-10-02)
+
+
+### Bug Fixes
+
+* bump @cocreate/hosting and @cocreate/socket-client ([0cbde08](https://github.com/CoCreate-app/CoCreate-datatable/commit/0cbde08200331c2ba7533f51f1e2aa56565828f2))
+
 ## [1.1.86](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.85...v1.1.86) (2022-10-01)
 
 
