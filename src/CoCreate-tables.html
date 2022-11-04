@@ -180,12 +180,12 @@
 								<div>
 									<a target="modal" href="render.html" 
 											pass-collection="module_activity"
-											pass-document_id="{{data._id}}"
+											pass-document_id="{{document._id}}"
 											pass-prefix="form_"
 											pass_to="form-fields" 
 											modal-width="320px" 
 											modal-color="#229954">
-										<h4>{{data.name}}</h4>
+										<h4>{{document.name}}</h4>
 										<div pass-collection="modules"
 											pass-document_id=""
 											pass-prefix="form_"
@@ -205,7 +205,7 @@
 									pass_to="form-fields" 
 									modal-width="320px" 
 									modal-color="#229954">
-								<b value="{{data._id}}">Module Id</b>
+								<b value="{{document._id}}">Module Id</b>
 								<div pass-collection="modules"
 									pass-document_id=""
 									pass-prefix="form_"
