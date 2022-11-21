@@ -1,3 +1,11 @@
+## [1.1.89](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.88...v1.1.89) (2022-11-21)
+
+
+### Bug Fixes
+
+* filter-order attributes renamed to filter-sort ([e9b5fe3](https://github.com/CoCreate-app/CoCreate-datatable/commit/e9b5fe361b8d18079919891f23dec8945217877b))
+* renamed {{data.key}} to {{document.key}} ([2114138](https://github.com/CoCreate-app/CoCreate-datatable/commit/211413808b3385484d5305bad7fae55fea1ddde2))
+
 ## [1.1.88](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.87...v1.1.88) (2022-10-02)
 
 
