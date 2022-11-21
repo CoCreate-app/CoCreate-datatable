@@ -10,7 +10,7 @@ module.exports = {
             "collection": "files",
             "document_id": "6025f32d7a78a543a77c9222",
             "key": "src",
-            "data":{
+            "document": {
                 "name": "index.html",
                 "path": "/docs/datatable/index.html",
                 "domains": [
