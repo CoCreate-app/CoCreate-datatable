@@ -1,3 +1,10 @@
+## [1.1.92](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.91...v1.1.92) (2022-11-21)
+
+
+### Bug Fixes
+
+* replaced document_id with document._id ([7bb635c](https://github.com/CoCreate-app/CoCreate-datatable/commit/7bb635ca336874460e62efb658f022f8c9c0097b))
+
 ## [1.1.91](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.90...v1.1.91) (2022-11-21)
 
 
