@@ -1,3 +1,11 @@
+## [1.1.94](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.93...v1.1.94) (2022-11-22)
+
+
+### Bug Fixes
+
+* apply src: {{source}} to CoCreate.config ([0f2671d](https://github.com/CoCreate-app/CoCreate-datatable/commit/0f2671da29f6dffed65a4e4a49ca02839cbf6b67))
+* workflow docs ([e921126](https://github.com/CoCreate-app/CoCreate-datatable/commit/e92112692e3b0b60bfde40acd978183841822b46))
+
 ## [1.1.93](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.92...v1.1.93) (2022-11-21)
 
 
