@@ -1,3 +1,11 @@
+## [1.1.98](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.97...v1.1.98) (2022-11-26)
+
+
+### Bug Fixes
+
+* bump dependencies ([e0d9007](https://github.com/CoCreate-app/CoCreate-datatable/commit/e0d9007e5cd4c8ff00100506ecb9f76370ab431a))
+* toggle-order renamed to filter-sort-toggle ([a8d853f](https://github.com/CoCreate-app/CoCreate-datatable/commit/a8d853fe82a08c25071de62f45b4945d51bdcfc1))
+
 ## [1.1.97](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.96...v1.1.97) (2022-11-25)
 
 
