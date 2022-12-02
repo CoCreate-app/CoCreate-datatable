@@ -1,3 +1,11 @@
+## [1.1.102](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.101...v1.1.102) (2022-12-02)
+
+
+### Bug Fixes
+
+* bump dependencies ([6846f30](https://github.com/CoCreate-app/CoCreate-datatable/commit/6846f303dd4d3231ae1726f0869b8bcf59e6fdeb))
+* renamed filter-sort-type to filter-sort-direction ([359d1c1](https://github.com/CoCreate-app/CoCreate-datatable/commit/359d1c113e008350081201795ec03b14b19226b2))
+
 ## [1.1.101](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.100...v1.1.101) (2022-11-28)
 
 
