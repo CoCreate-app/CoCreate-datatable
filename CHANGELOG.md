@@ -1,3 +1,10 @@
+## [1.1.111](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.110...v1.1.111) (2022-12-13)
+
+
+### Bug Fixes
+
+* removed un used devDependencies ([2f45478](https://github.com/CoCreate-app/CoCreate-datatable/commit/2f454782ae5c8029c1eca8795101d28c9332e0d3))
+
 ## [1.1.110](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.109...v1.1.110) (2022-12-13)
 
 
