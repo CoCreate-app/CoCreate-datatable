@@ -1,3 +1,11 @@
+## [1.1.118](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.117...v1.1.118) (2022-12-25)
+
+
+### Bug Fixes
+
+* bump dependencies ([76eed6d](https://github.com/CoCreate-app/CoCreate-datatable/commit/76eed6dafb244bf5e1862d5a77927cc107ec514f))
+* type="modal" and pass_to updated to action="pass, openModal" ([ccc979e](https://github.com/CoCreate-app/CoCreate-datatable/commit/ccc979ed601e5f02a6452d93ac54afeb5b189ce6))
+
 ## [1.1.117](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.116...v1.1.117) (2022-12-23)
 
 
