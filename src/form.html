@@ -75,7 +75,7 @@
   			<li class="margin-right:15px"><a fullscreen><i toggle="fa-compress, fa-expand" class="fas fa-expand">
   			  </i></a></li>
   			<li class="margin-right:15px">
-  			    <a target="modal" href="render.html"
+  			    <a actions="pass, openModal" href="render.html"
             	 pass-collection="modules"
             	 pass-module_id="" 
             	 pass-prefix="form_" 
@@ -99,7 +99,7 @@
 
         <form realtime="true" collection="module_activity" class="mbottom:75">
 
-          <input type="hidden" name="module_id" pass-value_id="module_id" pass_id="form-fields" placeholder="Module Id">
+          <input type="hidden" name="module_id" pass_id="module_id" pass_id="form-fields" placeholder="Module Id">
          
           <input type="text" name="name" pass_id="form-fields" class="floating-label" placeholder="Title">
           
@@ -236,7 +236,7 @@
          	
     </div><!-- domEditor -->
 
-          <div style=width="100%" class="noDrag">
+          <div class="width:100% noDrag">
             <input id="tasklist-name"><a clone_id="tasklist" class="cloneBtn noDrag" style="display: block" clone-name="tasklist-name">New Tasklist</a>  
           </div>
           
