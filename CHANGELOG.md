@@ -1,3 +1,11 @@
+## [1.1.119](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.118...v1.1.119) (2022-12-27)
+
+
+### Bug Fixes
+
+* bump dependencies ([132fdd2](https://github.com/CoCreate-app/CoCreate-datatable/commit/132fdd20612df65f46e5a5d00d4e34f0a88631a9))
+* modal href updated to modal-src ([37e8d5b](https://github.com/CoCreate-app/CoCreate-datatable/commit/37e8d5bd5bc6bab175552f04db6ca54942246768))
+
 ## [1.1.118](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.117...v1.1.118) (2022-12-25)
 
 
