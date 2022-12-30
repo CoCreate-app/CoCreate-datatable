@@ -1,3 +1,10 @@
+## [1.1.121](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.120...v1.1.121) (2022-12-30)
+
+
+### Bug Fixes
+
+* update config sources to use template  braces with entry on src ([a71000d](https://github.com/CoCreate-app/CoCreate-datatable/commit/a71000defc71f22cae671e07a1743fc64fbece9a))
+
 ## [1.1.120](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.119...v1.1.120) (2022-12-29)
 
 
