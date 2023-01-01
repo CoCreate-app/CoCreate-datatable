@@ -1,3 +1,10 @@
+## [1.1.123](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.122...v1.1.123) (2023-01-01)
+
+
+### Bug Fixes
+
+* docs sanbox overflow ([ef578c1](https://github.com/CoCreate-app/CoCreate-datatable/commit/ef578c1581c7acd54ef1b8ad63c8b89242ea8e86))
+
 ## [1.1.122](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.121...v1.1.122) (2022-12-31)
 
 
