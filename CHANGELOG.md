@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.123...v1.2.0) (2023-01-02)
+
+
+### Features
+
+* class="template" template_id="id" replaced with template="id" ([37fa4ac](https://github.com/CoCreate-app/CoCreate-datatable/commit/37fa4ac529e0bd83f5fa92185963148cb1451e9d))
+
 ## [1.1.123](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.1.122...v1.1.123) (2023-01-01)
 
 
