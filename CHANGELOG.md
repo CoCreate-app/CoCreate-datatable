@@ -1,3 +1,11 @@
+## [1.2.2](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.2.1...v1.2.2) (2023-01-06)
+
+
+### Bug Fixes
+
+* bump dependencies, worklow [@v3](https://github.com/v3) ([31e0e57](https://github.com/CoCreate-app/CoCreate-datatable/commit/31e0e57dc46474ff1f4a7d50bb6aff2ab915f044))
+* edit in github btn styles ([6422877](https://github.com/CoCreate-app/CoCreate-datatable/commit/64228772fb3bfe6651e42a1c6ed2c6a8ad7214b9))
+
 ## [1.2.1](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.2.0...v1.2.1) (2023-01-05)
 
 
