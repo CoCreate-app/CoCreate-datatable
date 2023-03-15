@@ -1,3 +1,10 @@
+## [1.2.11](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.2.10...v1.2.11) (2023-03-15)
+
+
+### Bug Fixes
+
+* update clone attributes ([1f46fbc](https://github.com/CoCreate-app/CoCreate-datatable/commit/1f46fbcbefec116d72528d835a6d402e1ad452f4))
+
 ## [1.2.10](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.2.9...v1.2.10) (2023-02-01)
 
 
