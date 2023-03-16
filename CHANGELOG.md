@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.3.1...v1.3.2) (2023-03-16)
+
+
+### Bug Fixes
+
+* filter-sort-direction ([2bdc61c](https://github.com/CoCreate-app/CoCreate-datatable/commit/2bdc61c1d9a074b51f215bddbcab89fe04a043c7))
+
 ## [1.3.1](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.3.0...v1.3.1) (2023-03-16)
 
 
