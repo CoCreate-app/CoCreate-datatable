@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.2.11...v1.3.0) (2023-03-16)
+
+
+### Features
+
+* replaced get-value and set-value with a super charged version of CoCreate-events ([411e34a](https://github.com/CoCreate-app/CoCreate-datatable/commit/411e34a985b05d0c891b0ed6fc862eb0e0d6d335))
+
 ## [1.2.11](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.2.10...v1.2.11) (2023-03-15)
 
 
