@@ -1,3 +1,10 @@
+## [1.3.5](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.3.4...v1.3.5) (2023-04-11)
+
+
+### Bug Fixes
+
+* renamed domains to hosts ([82f2b3d](https://github.com/CoCreate-app/CoCreate-datatable/commit/82f2b3de4ead5766eb6bd019de139db9386d6b9e))
+
 ## [1.3.4](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.3.3...v1.3.4) (2023-03-30)
 
 
