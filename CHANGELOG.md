@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.3.7...v1.4.0) (2023-04-24)
+
+
+### Features
+
+* added pwa manifest ([8b993ee](https://github.com/CoCreate-app/CoCreate-datatable/commit/8b993ee25fbb662eb7e613226643d26ff411c91b))
+
 ## [1.3.7](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.3.6...v1.3.7) (2023-04-11)
 
 
