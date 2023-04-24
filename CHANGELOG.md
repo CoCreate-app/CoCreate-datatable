@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.0...v1.4.1) (2023-04-24)
+
+
+### Bug Fixes
+
+* removed uglifyjs-webpack-plugin ([ebdd5e9](https://github.com/CoCreate-app/CoCreate-datatable/commit/ebdd5e98fb460b55ea8fdc4e43f9e8c8870ea4cf))
+
 # [1.4.0](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.3.7...v1.4.0) (2023-04-24)
 
 
