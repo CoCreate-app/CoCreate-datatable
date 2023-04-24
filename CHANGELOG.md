@@ -1,3 +1,11 @@
+## [1.4.3](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.2...v1.4.3) (2023-04-24)
+
+
+### Bug Fixes
+
+* updated worrkflows to v3 and node version 16 ([4a5b6d4](https://github.com/CoCreate-app/CoCreate-datatable/commit/4a5b6d4d5f17330ceaf6e2afeee27a2d4ab01984))
+* workflow node version updated  16 ([7a74b59](https://github.com/CoCreate-app/CoCreate-datatable/commit/7a74b5947dfc9d441e8dfb40dfb6add7ebd87ed5))
+
 ## [1.4.2](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.1...v1.4.2) (2023-04-24)
 
 
