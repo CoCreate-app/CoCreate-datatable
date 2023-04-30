@@ -1,3 +1,12 @@
+## [1.4.4](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.3...v1.4.4) (2023-04-30)
+
+
+### Bug Fixes
+
+* fullscreen target updated to fullscreen fullscreen-target ([7287420](https://github.com/CoCreate-app/CoCreate-datatable/commit/728742037c20763628d06d65bdbe028811d10e6f))
+* package-lock.json and pnpm-lock.yaml added to .gitignore ([34ba73e](https://github.com/CoCreate-app/CoCreate-datatable/commit/34ba73e18b476850a3127b8385ca06a7ab648ad7))
+* removed toogle fullscreen icons. now using css content ([33a8585](https://github.com/CoCreate-app/CoCreate-datatable/commit/33a8585f6abd7c6d32adabcb65d274506d23035b))
+
 ## [1.4.3](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.2...v1.4.3) (2023-04-24)
 
 
