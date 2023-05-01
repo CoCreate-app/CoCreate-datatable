@@ -1,3 +1,10 @@
+## [1.4.7](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.6...v1.4.7) (2023-05-01)
+
+
+### Bug Fixes
+
+* replaced icon toggles with new svg ([4d5bc92](https://github.com/CoCreate-app/CoCreate-datatable/commit/4d5bc9259d5a552d3ed8c44c98b03379e3a2c4fc))
+
 ## [1.4.6](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.5...v1.4.6) (2023-05-01)
 
 
