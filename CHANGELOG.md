@@ -1,3 +1,10 @@
+## [1.4.6](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.5...v1.4.6) (2023-05-01)
+
+
+### Bug Fixes
+
+* update manifest.json to manifest.webmanifest ([50430f5](https://github.com/CoCreate-app/CoCreate-datatable/commit/50430f5eb01b5ecd5188466e505521f36aaf27f8))
+
 ## [1.4.5](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.4...v1.4.5) (2023-05-01)
 
 
