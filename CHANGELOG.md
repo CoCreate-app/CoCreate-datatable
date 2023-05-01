@@ -1,3 +1,10 @@
+## [1.4.5](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.4...v1.4.5) (2023-05-01)
+
+
+### Bug Fixes
+
+* replace fontawesome with svg ([343a526](https://github.com/CoCreate-app/CoCreate-datatable/commit/343a52695fc42ed55da93759fe2027991382090e))
+
 ## [1.4.4](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.3...v1.4.4) (2023-04-30)
 
 
