@@ -1,3 +1,10 @@
+## [1.4.9](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.8...v1.4.9) (2023-05-10)
+
+
+### Bug Fixes
+
+* apikey renamed to key ([9d945e2](https://github.com/CoCreate-app/CoCreate-datatable/commit/9d945e2a3a22a4c7f7227dc2a87d469162170947))
+
 ## [1.4.8](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.7...v1.4.8) (2023-05-10)
 
 
