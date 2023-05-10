@@ -1,3 +1,11 @@
+## [1.4.8](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.7...v1.4.8) (2023-05-10)
+
+
+### Bug Fixes
+
+* bump [@cocreate](https://github.com/cocreate) dependencies ([462170f](https://github.com/CoCreate-app/CoCreate-datatable/commit/462170f1f0f69456214cefb91086b670155e78a5))
+* filter-sort icon ([06bc4d4](https://github.com/CoCreate-app/CoCreate-datatable/commit/06bc4d40246656a4f704fc5de793e947e6a90242))
+
 ## [1.4.7](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.6...v1.4.7) (2023-05-01)
 
 
