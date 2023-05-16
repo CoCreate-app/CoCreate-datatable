@@ -1,243 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="icon"
+            href="https://cdn.cocreate.app/favicon.ico"
+            type="image/ico"
+            sizes="16x16" />
+        <title>Datatables | CoCreate</title>
 
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" href="https://cdn.cocreate.app/favicon.ico" type="image/ico" sizes="16x16">
-		<title>Datatables | CoCreate</title>
-	
-		<!-- CoCreateCSS -->
-		<link rel="stylesheet" href="https://cdn.cocreate.app/latest/CoCreate.min.css" type="text/css"/>
+        <!-- CoCreateCSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.cocreate.app/latest/CoCreate.min.css"
+            type="text/css" />
 
-		
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous" />  
-		<link rel="manifest" href="/manifest.webmanifest" />
-	</head>
-	
-		<style>
-			a[filter-sort-toggle]:before {
-				font-family: 'Font Awesome 5 Free';
-				content: "\f0dc";
-				font-weight: 900;
-			}
-			a[filter-sort-toggle=asc]:before {
-				font-family: 'Font Awesome 5 Free';
-				content: "\f0de";
-				font-weight: 900;
-			}
-			a[filter-sort-toggle=desc]:before {
-				font-family: 'Font Awesome 5 Free';
-				content: "\f0dd";
-				font-weight: 900;   
-			}
-		</style>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+            crossorigin="anonymous" />
+        <link rel="manifest" href="/manifest.webmanifest" />
+    </head>
 
-	<body class="width:fit-content overflow:auto">
-		<!-- Navbar -->
-		<div class="nav display:flex align-items:center background:whitesmoke position:sticky left:0 width:100vw" 
-			content_id="content"
-			scroll-effect="hide-nav"
-			scroll-up="1" 
-			scroll-down="1">
+    <style>
+        a[filter-sort-toggle]:before {
+            font-family: "Font Awesome 5 Free";
+            content: "\f0dc";
+            font-weight: 900;
+        }
+        a[filter-sort-toggle="asc"]:before {
+            font-family: "Font Awesome 5 Free";
+            content: "\f0de";
+            font-weight: 900;
+        }
+        a[filter-sort-toggle="desc"]:before {
+            font-family: "Font Awesome 5 Free";
+            content: "\f0dd";
+            font-weight: 900;
+        }
+    </style>
 
-			<!-- Menu Icon Animations -->
-			<a class="nav-toggle menu_icon--Vdots" toggle-sidenav="menuL">
-				<div class="circle"></div>
-				<div class="circle"></div>
-				<div class="circle"></div>
-				<div class="circle"></div>
-				<div class="circle"></div>
-			</a>
-				
-			<!-- Horizontal Scroll Nav/Tabs -->
-			<ul class="overflow:auto display:inline-flex direction:rtl font-size:20px align-items:center list-style-type:none width:100% height:50px">
-				
-				<!-- Modal Controls -->
-				<li class="margin-right:15px">
-					<a actions="closeModal"><i class="display:flex height:18px fill:#505050" src="/assets/svg/times.svg"></i></a>
-				</li>
-				<li class="margin-right:15px">
-					<a actions="minMaxModal">
-						<i toggle="/assets/svg/window-restore.svg, /assets/svg/window-maximize.svg" toggle-attribute="src" class="display:flex height:18px fill:#505050" src="/assets/svg/window-maximize.svg"></i>
-					</a>
-				</li>				<li class="margin-right:15px"><a actions="parkModal"><i class="far fa-window-minimize">
-					</i></a>
-				</li>
-				
-				<!-- fullscreen toogle and icon transform-->
-				<li class="margin-right:15px">
-					<a fullscreen>
-						<i class="display:flex height:18px fill:#505050" src="/assets/svg/expand.svg"></i>
-						<i class="display:flex height:18px fill:#505050" src="/assets/svg/compress.svg"></i>
-					</a>
+    <body class="width:fit-content overflow:auto">
+        <!-- Navbar -->
+        <div
+            class="nav display:flex align-items:center background:whitesmoke position:sticky left:0 width:100vw"
+            content_id="content"
+            scroll-effect="hide-nav"
+            scroll-up="1"
+            scroll-down="1">
+            <!-- Menu Icon Animations -->
+            <a class="nav-toggle menu_icon--Vdots" toggle-sidenav="menuL">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </a>
 
-				</li>
-				
-				<!-- Render Builder -->
-				<li class="margin-right:15px">
-						<a actions="pass, openModal" modal-src="render.html"
-							 pass-collection="modules"
-							 pass-document_id="" 
-							 
-							 pass_to="builder" 
-							 modal-width="100%"
-							 pass_id="render">
-								<i class="display:flex height:18px fill:#505050" src="/assets/svg/palette.svg"></i>
-							 <div pass-collection="modules"
-									pass-document_id=""
-									pass_to="render"
-									class="sessionBuilderUI_id">
-							 </div>
-						 </a>
-				</li>
-				
-				<!-- Render Module Form -->
-				<li class="margin-right:15px">
-					<a actions="pass, openModal" modal-src="form.html" 
-						pass-collection="modules" 
-						 
-						pass-document_id="" 
-						pass_to="render" 
-						modal-width="320px" 
-						modal-height="100%" 
-						modal-color="#229954" 
-						modal-header="false" 
-						modal-x="" 
-						modal-y="" 
-						pass_id="render">
-					 <i class="height:16px fill:#505050" src="/assets/svg/plus.svg"></i>
-					</a>
-				</li>
-				
-				<!-- Datatable Controls -->  
-				<li class="margin-right:15px">
-					<a  actions="deleteDocuments" collection="" template_id="" pass_id="datatable"><i class="height:18px fill:#505050" src="/assets/svg/trash-alt.svg"></i></a>
-				</li>
-				<li class="margin-right:15px">
-					<a toggle="hidden" toogle-target="#column-visibility"><i class="height:18px fill:#505050" src="/assets/svg/eye.svg"></i></a>
-				</li>
-				<li class="margin-right:15px">
-					<a actions="export" export-type="csv" template_id="datatable"><i class="height:18px fill:#505050" src="/assets/svg/file-csv.svg"></i></a>
-				</li>
-				<li class="margin-right:15px">
-					<a actions="export" template_id="datatable"><i class="height:18px fill:#505050" src="/assets/svg/file-download.svg"></i></a>
-				</li>
-				<li class="margin-right:15px">
-					<a actions="import" collection="" pass_id="datatable"><i class="height:18px fill:#505050" src="/assets/svg/file-upload.svg"></i></a>
-				</li>
-				<li class="margin-right:15px">
-					<a actions="copy" copy-target="tbody"><i class="height:18px fill:#505050" src="/assets/svg/copy.svg"></i></a>
-				</li>
-				<li class="margin-right:15px">
-					<a actions="print" print-target='tbody[template_id="datatable"]'><i class="height:18px fill:#505050" src="/assets/svg/print.svg"></i></a>
-				</li>
-			
-			 </ul>
-		</div>
-			
-		<!-- Modal Viewport -->  
-		<div class="position:fixed margin-top:50px" content_id="content" id="modal-viewport"></div>
-	 
-		<!-- Main Content -->  
-		<div content_id="content" class="padding:5px">
-			<table class="width:100% border-collapse:collapse">
-				<tr class="border-bottom:1px_solid_darkgray">
-					<td class="position:sticky top:0 background:white padding:0px_10px_10px">
-						<input type="text" class="floating-label"
-							filter-name="name" 
-							template_id="datatable" 
-							placeholder="Name">
-							<span class="position:absolute bottom:20px right:20px float:right z-index:6">
-								<!-- need a solution to update toggle value="desc|asc" and define and upadte icons... show hide works great but to much html and orderby only has 2 values -->
-								<a filter-sort-name="name" filter-sort-toggle template_id="datatable">
-									<i></i>
-								</a>
-							</span>
-					</td>
-					<td class="position:sticky top:0 background:white padding:0px_10px_10px">
-						<input type="text" class="floating-label"
-							filter-name="_id" 
-							template_id="datatable" 
-							placeholder="Document_id"/>
-							<span class="position:absolute bottom:20px right:20px float:right z-index:6" >
-								<a filter-sort-name="_id" value="" filter-sort-direction="asc" click-value="desc, asc" click-attribute="filter-sort-direction" template_id="datatable">
-								</a>
-							</span>
-					</td>
-				</tr>
+            <!-- Horizontal Scroll Nav/Tabs -->
+            <ul
+                class="overflow:auto display:inline-flex direction:rtl font-size:20px align-items:center list-style-type:none width:100% height:50px">
+                <!-- Modal Controls -->
+                <li class="margin-right:15px">
+                    <a actions="closeModal"
+                        ><i
+                            class="display:flex height:18px fill:#505050"
+                            src="/assets/svg/times.svg"></i
+                    ></a>
+                </li>
+                <li class="margin-right:15px">
+                    <a actions="minMaxModal">
+                        <i
+                            toggle="/assets/svg/window-restore.svg, /assets/svg/window-maximize.svg"
+                            toggle-attribute="src"
+                            class="display:flex height:18px fill:#505050"
+                            src="/assets/svg/window-maximize.svg"></i>
+                    </a>
+                </li>
+                <li class="margin-right:15px">
+                    <a actions="parkModal"
+                        ><i class="far fa-window-minimize"> </i
+                    ></a>
+                </li>
 
-				<tbody
-					fetch-collection="modules"
-					fetch-limit=""
-					filter-sort-name="name" 
-					filter-sort-direction="asc"
-					template_id="datatable"
-					pass_to="me1234">
-					
-					<tr class="background:gainsboro:hover border-bottom:1px_solid_darkgray" template="datatable" pass_id="me1234">
-						<td class="padding:10px">
-							<div class="display:flex min-width:200px">
-								<div class="">
-									<span document_id="_id" name="icon" value="icon"></span>
-								</div>
-								<div>
-									<a actions="pass, openModal" modal-src="render.html" 
-											pass-collection="module_activity"
-											pass-document_id="{{document._id}}"
-											
-											pass_to="form-fields" 
-											modal-width="320px" 
-											modal-color="#229954">
-										<h4>{{document.name}}</h4>
-										<div pass-collection="modules"
-											pass-document_id=""
-											
-											pass_to="render"
-											pass_id="render">
-										</div>
-									</a>
-									<h5 name="description" value="description"></h5>
-								</div>
-							</div>
-						</td>
-						<td class="padding:10px">
-							<a actions="pass, openModal" modal-src="render.html"
-									pass-document_id=""
-									
-									pass-collection="module_activity"
-									pass_to="form-fields" 
-									modal-width="320px" 
-									modal-color="#229954">
-								<b value="{{document._id}}">Module Id</b>
-								<div pass-collection="modules"
-									pass-document_id=""
-									
-									pass_to="render">
-								</div>
-							</a>
-						</td>
-					</tr>
-					
-				</tbody>
-			</table>
-	
-		</div>
+                <!-- fullscreen toogle and icon transform-->
+                <li class="margin-right:15px">
+                    <a fullscreen>
+                        <i
+                            class="display:flex height:18px fill:#505050"
+                            src="/assets/svg/expand.svg"></i>
+                        <i
+                            class="display:flex height:18px fill:#505050"
+                            src="/assets/svg/compress.svg"></i>
+                    </a>
+                </li>
 
-		<button actions="pass, openModal" modal-src="render.html" 
-			 pass-collection="modules"
-			 pass-document_id=""
-			 
-			 pass_to="render"
-			 modal-width="320px" 
-			 modal-height="100%"
-			 modal-color="#229954"
-			 class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue color:#fff font-size:1.5rem grow-hover border-radius:50% border-width:0 box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4) z-index:8" pass_id="render">
-			<i class="height:20px fill:#505050" src="/assets/svg/plus.svg"></i>
-		</button>
-	
-		<script src="https://cdn.cocreate.app/latest/CoCreate.min.js" ></script>
-		
-	</body>
+                <!-- Render Builder -->
+                <li class="margin-right:15px">
+                    <a
+                        actions="pass, openModal"
+                        modal-src="render.html"
+                        pass-collection="modules"
+                        pass-document_id=""
+                        pass_to="builder"
+                        modal-width="100%"
+                        pass_id="render">
+                        <i
+                            class="display:flex height:18px fill:#505050"
+                            src="/assets/svg/palette.svg"></i>
+                        <div
+                            pass-collection="modules"
+                            pass-document_id=""
+                            pass_to="render"
+                            class="sessionBuilderUI_id"></div>
+                    </a>
+                </li>
+
+                <!-- Render Module Form -->
+                <li class="margin-right:15px">
+                    <a
+                        actions="pass, openModal"
+                        modal-src="form.html"
+                        pass-collection="modules"
+                        pass-document_id=""
+                        pass_to="render"
+                        modal-width="320px"
+                        modal-height="100%"
+                        modal-color="#229954"
+                        modal-header="false"
+                        modal-x=""
+                        modal-y=""
+                        pass_id="render">
+                        <i
+                            class="height:16px fill:#505050"
+                            src="/assets/svg/plus.svg"></i>
+                    </a>
+                </li>
+
+                <!-- Datatable Controls -->
+                <li class="margin-right:15px">
+                    <a
+                        actions="deleteDocuments"
+                        collection=""
+                        template_id=""
+                        pass_id="datatable"
+                        ><i
+                            class="height:18px fill:#505050"
+                            src="/assets/svg/trash-alt.svg"></i
+                    ></a>
+                </li>
+                <li class="margin-right:15px">
+                    <a toggle="hidden" toogle-target="#column-visibility"
+                        ><i
+                            class="height:18px fill:#505050"
+                            src="/assets/svg/eye.svg"></i
+                    ></a>
+                </li>
+                <li class="margin-right:15px">
+                    <a
+                        actions="export"
+                        export-type="csv"
+                        template_id="datatable"
+                        ><i
+                            class="height:18px fill:#505050"
+                            src="/assets/svg/file-csv.svg"></i
+                    ></a>
+                </li>
+                <li class="margin-right:15px">
+                    <a actions="export" template_id="datatable"
+                        ><i
+                            class="height:18px fill:#505050"
+                            src="/assets/svg/file-download.svg"></i
+                    ></a>
+                </li>
+                <li class="margin-right:15px">
+                    <a actions="import" collection="" pass_id="datatable"
+                        ><i
+                            class="height:18px fill:#505050"
+                            src="/assets/svg/file-upload.svg"></i
+                    ></a>
+                </li>
+                <li class="margin-right:15px">
+                    <a actions="copy" copy-target="tbody"
+                        ><i
+                            class="height:18px fill:#505050"
+                            src="/assets/svg/copy.svg"></i
+                    ></a>
+                </li>
+                <li class="margin-right:15px">
+                    <a
+                        actions="print"
+                        print-target="tbody[template_id='datatable']"
+                        ><i
+                            class="height:18px fill:#505050"
+                            src="/assets/svg/print.svg"></i
+                    ></a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Modal Viewport -->
+        <div
+            class="position:fixed margin-top:50px"
+            content_id="content"
+            id="modal-viewport"></div>
+
+        <!-- Main Content -->
+        <div content_id="content" class="padding:5px">
+            <table class="width:100% border-collapse:collapse">
+                <tr class="border-bottom:1px_solid_darkgray">
+                    <td
+                        class="position:sticky top:0 background:white padding:0px_10px_10px">
+                        <input
+                            type="text"
+                            class="floating-label"
+                            filter-name="name"
+                            template_id="datatable"
+                            placeholder="Name" />
+                        <span
+                            class="position:absolute bottom:20px right:20px float:right z-index:6">
+                            <!-- need a solution to update toggle value="desc|asc" and define and upadte icons... show hide works great but to much html and orderby only has 2 values -->
+                            <a
+                                filter-sort-name="name"
+                                filter-sort-toggle
+                                template_id="datatable">
+                                <i></i>
+                            </a>
+                        </span>
+                    </td>
+                    <td
+                        class="position:sticky top:0 background:white padding:0px_10px_10px">
+                        <input
+                            type="text"
+                            class="floating-label"
+                            filter-name="_id"
+                            template_id="datatable"
+                            placeholder="Document_id" />
+                        <span
+                            class="position:absolute bottom:20px right:20px float:right z-index:6">
+                            <a
+                                filter-sort-name="_id"
+                                value=""
+                                filter-sort-direction="asc"
+                                click-value="desc, asc"
+                                click-attribute="filter-sort-direction"
+                                template_id="datatable">
+                            </a>
+                        </span>
+                    </td>
+                </tr>
+
+                <tbody
+                    fetch-collection="modules"
+                    fetch-limit=""
+                    filter-sort-name="name"
+                    filter-sort-direction="asc"
+                    template_id="datatable"
+                    pass_to="me1234">
+                    <tr
+                        class="background:gainsboro:hover border-bottom:1px_solid_darkgray"
+                        template="datatable"
+                        pass_id="me1234">
+                        <td class="padding:10px">
+                            <div class="display:flex min-width:200px">
+                                <div class="">
+                                    <span
+                                        document_id="_id"
+                                        name="icon"
+                                        value="icon"></span>
+                                </div>
+                                <div>
+                                    <a
+                                        actions="pass, openModal"
+                                        modal-src="render.html"
+                                        pass-collection="module_activity"
+                                        pass-document_id="{{document._id}}"
+                                        pass_to="form-fields"
+                                        modal-width="320px"
+                                        modal-color="#229954">
+                                        <h4>{{document.name}}</h4>
+                                        <div
+                                            pass-collection="modules"
+                                            pass-document_id=""
+                                            pass_to="render"
+                                            pass_id="render"></div>
+                                    </a>
+                                    <h5
+                                        name="description"
+                                        value="description"></h5>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="padding:10px">
+                            <a
+                                actions="pass, openModal"
+                                modal-src="render.html"
+                                pass-document_id=""
+                                pass-collection="module_activity"
+                                pass_to="form-fields"
+                                modal-width="320px"
+                                modal-color="#229954">
+                                <b value="{{document._id}}">Module Id</b>
+                                <div
+                                    pass-collection="modules"
+                                    pass-document_id=""
+                                    pass_to="render"></div>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <button
+            actions="pass, openModal"
+            modal-src="render.html"
+            pass-collection="modules"
+            pass-document_id=""
+            pass_to="render"
+            modal-width="320px"
+            modal-height="100%"
+            modal-color="#229954"
+            class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue color:#fff font-size:1.5rem grow-hover border-radius:50% border-width:0 box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4) z-index:8"
+            pass_id="render">
+            <i class="height:20px fill:#505050" src="/assets/svg/plus.svg"></i>
+        </button>
+
+        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
+    </body>
 </html>
