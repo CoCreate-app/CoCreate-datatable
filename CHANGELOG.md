@@ -1,3 +1,10 @@
+## [1.4.10](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.9...v1.4.10) (2023-05-19)
+
+
+### Bug Fixes
+
+* update packages to latest version. This commit updates various packages in the dependencies section of the package.json file to their latest published versions, thereby fixing multiple bugs and improving overall performance. ([93a174e](https://github.com/CoCreate-app/CoCreate-datatable/commit/93a174e38ed73f3b4373077546db73f2132c053c))
+
 ## [1.4.9](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.8...v1.4.9) (2023-05-10)
 
 
