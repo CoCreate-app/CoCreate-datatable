@@ -1,3 +1,10 @@
+## [1.4.12](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.11...v1.4.12) (2023-06-04)
+
+
+### Bug Fixes
+
+* **semantic-release:** worklow error solved by running node version 14 ([3a0ee3f](https://github.com/CoCreate-app/CoCreate-datatable/commit/3a0ee3f8bdb7bbe873cd5e23f40403e8a9b7eb17))
+
 ## [1.4.11](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.10...v1.4.11) (2023-05-21)
 
 
