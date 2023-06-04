@@ -1,6 +1,6 @@
 {
   "name": "@cocreate/datatable",
-  "version": "1.4.13",
+  "version": "1.4.14",
   "description": "A simple datatable component in vanilla javascript. Easily configured using HTML5 attributes and/or JavaScript API.",
   "keywords": [
     "datatable",

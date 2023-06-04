@@ -1,3 +1,10 @@
+## [1.4.14](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.13...v1.4.14) (2023-06-04)
+
+
+### Bug Fixes
+
+* Refactor CoCreate.config.js to remove hard-coded credentials ([475dcd8](https://github.com/CoCreate-app/CoCreate-datatable/commit/475dcd879deea70ea0ea5c682666ac2aef2a57ad))
+
 ## [1.4.13](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.12...v1.4.13) (2023-06-04)
 
 
