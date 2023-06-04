@@ -1,3 +1,11 @@
+## [1.4.13](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.12...v1.4.13) (2023-06-04)
+
+
+### Bug Fixes
+
+* replaced secert GITHUB_TOKEN with GITHUB ([52bffd4](https://github.com/CoCreate-app/CoCreate-datatable/commit/52bffd496bc0213c1fd23d1d580071772588c984))
+* Update dependencies versions for [@cocreate](https://github.com/cocreate) libraries ([1098a27](https://github.com/CoCreate-app/CoCreate-datatable/commit/1098a27af925492a0d5aa52482f1c27323739981))
+
 ## [1.4.12](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.11...v1.4.12) (2023-06-04)
 
 
