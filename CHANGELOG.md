@@ -1,3 +1,10 @@
+## [1.4.21](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.20...v1.4.21) (2023-06-11)
+
+
+### Bug Fixes
+
+* testing workflow ([9faad00](https://github.com/CoCreate-app/CoCreate-datatable/commit/9faad0042fe428f1db949cb216c3612576ac06b2))
+
 ## [1.4.20](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.19...v1.4.20) (2023-06-11)
 
 
