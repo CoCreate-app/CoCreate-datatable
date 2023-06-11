@@ -1,3 +1,10 @@
+## [1.4.19](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.18...v1.4.19) (2023-06-11)
+
+
+### Bug Fixes
+
+* postintall error ([8988949](https://github.com/CoCreate-app/CoCreate-datatable/commit/8988949a9ed4d2e47c4e79ccc1c8234f438f4e45))
+
 ## [1.4.18](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.17...v1.4.18) (2023-06-11)
 
 
