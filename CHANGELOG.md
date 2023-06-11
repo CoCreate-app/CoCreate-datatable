@@ -1,3 +1,10 @@
+## [1.4.16](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.15...v1.4.16) (2023-06-11)
+
+
+### Bug Fixes
+
+* renamed hosts to host. the value can be a string or an array of strings ([b6ff67d](https://github.com/CoCreate-app/CoCreate-datatable/commit/b6ff67d2d29ffe87ad17ac32b6c5d6d3d4f512f2))
+
 ## [1.4.15](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.14...v1.4.15) (2023-06-10)
 
 
