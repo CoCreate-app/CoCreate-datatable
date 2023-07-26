@@ -171,17 +171,20 @@
                             placeholder="Stage"
                             pass_id="form-fields"
                             realtime="true">
-                            <input placeholder="Search" template_id="stage" />
+                            <input
+                                placeholder="Search"
+                                filter-parent="collection"
+                                filter-search />
                             <ul
-                                fetch-collection="module_activity"
+                                collection="module_activity"
                                 pass_to="me1234"
-                                template_id="stage"
                                 filter-name="module_id"
                                 filter-value="5e6d79f9d8cdbe53927a0443"
+                                render-selector="[template]"
                                 class="options overflow:auto">
                                 <li
                                     class="option display:flex margin:5px"
-                                    template="stage"
+                                    template
                                     value=""
                                     pass_id="me1234">
                                     <p
@@ -204,15 +207,18 @@
                             multiple
                             placeholder="Members"
                             pass_id="form-fields">
-                            <input placeholder="Search" template_id="members" />
+                            <input
+                                placeholder="Search"
+                                filter-parent="collection"
+                                filter-search />
                             <ul
-                                fetch-collection="users"
+                                collection="users"
                                 pass_to="me1234"
-                                template_id="members"
+                                render-selector="[template]"
                                 class="options overflow:auto">
                                 <li
                                     class="option display:flex margin:5px"
-                                    template="members"
+                                    template
                                     pass_id="me1234">
                                     <!-- Avatar with label and status only-->
                                     <div class="avatar-wrapper">
@@ -292,15 +298,18 @@
                             multiple
                             placeholder="Status"
                             pass_id="form-fields">
-                            <input placeholder="Search" template_id="status" />
+                            <input
+                                placeholder="Search"
+                                filter-parent="collection"
+                                filter-search />
                             <ul
-                                fetch-collection="users"
-                                template_id="status"
+                                collection="users"
+                                render-selector="[template]"
                                 pass_to="me1234"
                                 class="options overflow:auto">
                                 <li
                                     class="option display:flex margin:5px"
-                                    template="status"
+                                    template
                                     pass_id="me1234">
                                     <!-- Avatar with label and status only-->
                                     <div class="avatar-wrapper">
