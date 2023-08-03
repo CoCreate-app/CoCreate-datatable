@@ -4,8 +4,8 @@ module.exports = {
     "host": "",
     "sources": [
         {
-            "collection": "files",
-            "document": {
+            "array": "files",
+            "object": {
                 "_id": "6025f32d7a78a543a77c9222",
                 "name": "index.html",
                 "path": "/docs/datatable/index.html",

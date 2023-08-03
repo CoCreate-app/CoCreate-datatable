@@ -108,8 +108,8 @@
                     <a
                         actions="pass, openModal"
                         modal-src="render.html"
-                        pass-collection="modules"
-                        pass-document_id=""
+                        pass-array="modules"
+                        pass-object=""
                         pass_to="builder"
                         modal-width="100%"
                         pass_id="render">
@@ -117,8 +117,8 @@
                             class="display:flex height:18px fill:#505050"
                             src="/assets/svg/palette.svg"></i>
                         <div
-                            pass-collection="modules"
-                            pass-document_id=""
+                            pass-array="modules"
+                            pass-object=""
                             pass_to="render"
                             class="sessionBuilderUI_Id"></div>
                     </a>
@@ -127,8 +127,8 @@
                 <li class="margin-right:15px">
                     <a
                         actions="deleteDocument, closeModal"
-                        collection="module_activity"
-                        document_id=""
+                        array="module_activity"
+                        object=""
                         pass_id="form-fields"
                         ><i
                             class="height:18px fill:#505050"
@@ -138,10 +138,7 @@
             </ul>
         </div>
         <div class="padding:20px" content_id="content">
-            <form
-                realtime="true"
-                collection="module_activity"
-                class="mbottom:75">
+            <form realtime="true" array="module_activity" class="mbottom:75">
                 <input
                     type="hidden"
                     name="module_id"
@@ -166,17 +163,17 @@
                         <!-- CoCreate Select -->
                         <div
                             class="select--field sortable floating-label"
-                            collection="module_activity"
+                            array="module_activity"
                             name="stage"
                             placeholder="Stage"
                             pass_id="form-fields"
                             realtime="true">
                             <input
                                 placeholder="Search"
-                                filter-parent="collection"
+                                filter-parent="array"
                                 filter-search />
                             <ul
-                                collection="module_activity"
+                                array="module_activity"
                                 pass_to="me1234"
                                 filter-name="module_id"
                                 filter-value="5e6d79f9d8cdbe53927a0443"
@@ -188,8 +185,8 @@
                                     value=""
                                     pass_id="me1234">
                                     <p
-                                        collection="module_activity"
-                                        document_id=""
+                                        array="module_activity"
+                                        object=""
                                         name="name"
                                         pass_id="me1234">
                                         Stage Name
@@ -209,10 +206,10 @@
                             pass_id="form-fields">
                             <input
                                 placeholder="Search"
-                                filter-parent="collection"
+                                filter-parent="array"
                                 filter-search />
                             <ul
-                                collection="users"
+                                array="users"
                                 pass_to="me1234"
                                 render-selector="[template]"
                                 class="options overflow:auto">
@@ -224,15 +221,15 @@
                                     <div class="avatar-wrapper">
                                         <a class="avatar round">
                                             <span
-                                                collection="users"
-                                                document_id=""
+                                                array="users"
+                                                object=""
                                                 name="name"
                                                 class="first-letter avatar-name"
                                                 >B</span
                                             >
                                             <span
-                                                collection="users"
-                                                document_id=""
+                                                array="users"
+                                                object=""
                                                 name="profile_image"
                                                 class="avatar-image">
                                                 <img
@@ -246,16 +243,16 @@
                                         class="avatar-content margin-left:10px">
                                         <p
                                             class="avatar-title"
-                                            collection="users"
-                                            document_id=""
+                                            array="users"
+                                            object=""
                                             name="name"
                                             pass_id="me1234">
                                             user name
                                         </p>
                                         <p
                                             class="avatar-subtitle"
-                                            collection="users"
-                                            document_id=""
+                                            array="users"
+                                            object=""
                                             name="email"
                                             pass_id="me1234"></p>
                                     </div>
@@ -300,10 +297,10 @@
                             pass_id="form-fields">
                             <input
                                 placeholder="Search"
-                                filter-parent="collection"
+                                filter-parent="array"
                                 filter-search />
                             <ul
-                                collection="users"
+                                array="users"
                                 render-selector="[template]"
                                 pass_to="me1234"
                                 class="options overflow:auto">
@@ -315,15 +312,15 @@
                                     <div class="avatar-wrapper">
                                         <a class="avatar round">
                                             <span
-                                                collection="users"
-                                                document_id=""
+                                                array="users"
+                                                object=""
                                                 name="name"
                                                 class="first-letter avatar-name"
                                                 >B</span
                                             >
                                             <span
-                                                collection="users"
-                                                document_id=""
+                                                array="users"
+                                                object=""
                                                 name="profile_image"
                                                 class="avatar-image">
                                                 <img
@@ -337,16 +334,16 @@
                                         class="avatar-content margin-left:10px">
                                         <p
                                             class="avatar-title"
-                                            collection="users"
-                                            document_id=""
+                                            array="users"
+                                            object=""
                                             name="name"
                                             pass_id="me1234">
                                             user name
                                         </p>
                                         <p
                                             class="avatar-subtitle"
-                                            collection="users"
-                                            document_id=""
+                                            array="users"
+                                            object=""
                                             name="email"
                                             pass_id="me1234"></p>
                                     </div>
@@ -372,9 +369,9 @@
                                 class="margin:15px font-size-18px text-dark-gray">
                                 <span class="display:inline-block">
                                     <input
-                                        collection="module_activity"
+                                        array="module_activity"
                                         pass_id="form-fields"
-                                        document_id=""
+                                        object=""
                                         name="clone-name"
                                         id="stage-name"
                                         class="input_field"
@@ -413,7 +410,7 @@
                                         <div class="flex-grow-1">
                                             <input
                                                 class="floating-label"
-                                                document_id="5d8c79e7e4be424681b5e48d"
+                                                object="5d8c79e7e4be424681b5e48d"
                                                 name="taskname"
                                                 placeholder="Task Name" />
                                         </div>
@@ -459,7 +456,7 @@
                 <!--<div class="display:flex align-items-center padding:20px-top">-->
                 <!--  <div class='avatar padding:20px-right margin:10px-top'></div>-->
                 <!--  <div class="flex-1-1">-->
-                <!--    <input document_id="5e07c2a43145e2497e494bf0" type="text" name="name" class="floating-label" placeholder="Comment">-->
+                <!--    <input object="5e07c2a43145e2497e494bf0" type="text" name="name" class="floating-label" placeholder="Comment">-->
                 <!--  </div>-->
                 <!--</div>-->
                 <!--<div class="padding:20px-top">-->

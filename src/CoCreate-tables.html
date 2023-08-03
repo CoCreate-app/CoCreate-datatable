@@ -102,8 +102,8 @@
                     <a
                         actions="pass, openModal"
                         modal-src="render.html"
-                        pass-collection="modules"
-                        pass-document_id=""
+                        pass-array="modules"
+                        pass-object=""
                         pass_to="builder"
                         modal-width="100%"
                         pass_id="render">
@@ -111,8 +111,8 @@
                             class="display:flex height:18px fill:#505050"
                             src="/assets/svg/palette.svg"></i>
                         <div
-                            pass-collection="modules"
-                            pass-document_id=""
+                            pass-array="modules"
+                            pass-object=""
                             pass_to="render"
                             class="sessionBuilderUI_id"></div>
                     </a>
@@ -123,8 +123,8 @@
                     <a
                         actions="pass, openModal"
                         modal-src="form.html"
-                        pass-collection="modules"
-                        pass-document_id=""
+                        pass-array="modules"
+                        pass-object=""
                         pass_to="render"
                         modal-width="320px"
                         modal-height="100%"
@@ -141,7 +141,7 @@
 
                 <!-- Datatable Controls -->
                 <li class="margin-right:15px">
-                    <a actions="deleteDocuments" collection=""
+                    <a actions="deleteDocuments" array=""
                         ><i
                             class="height:18px fill:#505050"
                             src="/assets/svg/trash-alt.svg"></i
@@ -162,7 +162,7 @@
                     ></a>
                 </li>
                 <li class="margin-right:15px">
-                    <a actions="import" collection="" pass_id="datatable"
+                    <a actions="import" array="" pass_id="datatable"
                         ><i
                             class="height:18px fill:#505050"
                             src="/assets/svg/file-upload.svg"></i
@@ -237,7 +237,7 @@
                 </tr>
 
                 <tbody
-                    collection="modules"
+                    array="modules"
                     filter-limit=""
                     filter-sort-name="name"
                     filter-sort-direction="asc"
@@ -252,7 +252,7 @@
                             <div class="display:flex min-width:200px">
                                 <div class="">
                                     <span
-                                        document_id="_id"
+                                        object="_id"
                                         name="icon"
                                         value="icon"></span>
                                 </div>
@@ -260,15 +260,15 @@
                                     <a
                                         actions="pass, openModal"
                                         modal-src="render.html"
-                                        pass-collection="module_activity"
-                                        pass-document_id="{{document._id}}"
+                                        pass-array="module_activity"
+                                        pass-object="{{object._id}}"
                                         pass_to="form-fields"
                                         modal-width="320px"
                                         modal-color="#229954">
-                                        <h4>{{document.name}}</h4>
+                                        <h4>{{object.name}}</h4>
                                         <div
-                                            pass-collection="modules"
-                                            pass-document_id=""
+                                            pass-array="modules"
+                                            pass-object=""
                                             pass_to="render"
                                             pass_id="render"></div>
                                     </a>
@@ -282,15 +282,15 @@
                             <a
                                 actions="pass, openModal"
                                 modal-src="render.html"
-                                pass-document_id=""
-                                pass-collection="module_activity"
+                                pass-object=""
+                                pass-array="module_activity"
                                 pass_to="form-fields"
                                 modal-width="320px"
                                 modal-color="#229954">
-                                <b value="{{document._id}}">Module Id</b>
+                                <b value="{{object._id}}">Module Id</b>
                                 <div
-                                    pass-collection="modules"
-                                    pass-document_id=""
+                                    pass-array="modules"
+                                    pass-object=""
                                     pass_to="render"></div>
                             </a>
                         </td>
@@ -302,8 +302,8 @@
         <button
             actions="pass, openModal"
             modal-src="render.html"
-            pass-collection="modules"
-            pass-document_id=""
+            pass-array="modules"
+            pass-object=""
             pass_to="render"
             modal-width="320px"
             modal-height="100%"
