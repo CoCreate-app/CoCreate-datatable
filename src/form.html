@@ -141,19 +141,19 @@
             <form realtime="true" array="module_activity" class="mbottom:75">
                 <input
                     type="hidden"
-                    name="module_id"
+                    key="module_id"
                     pass_id="module_id"
                     placeholder="Module Id" />
 
                 <input
                     type="text"
-                    name="name"
+                    key="name"
                     pass_id="form-fields"
                     class="floating-label"
                     placeholder="Title" />
 
                 <textarea
-                    name="description"
+                    key="description"
                     pass_id="form-fields"
                     placeholder="Description"
                     class="floating-label"></textarea>
@@ -164,7 +164,7 @@
                         <div
                             class="select--field sortable floating-label"
                             array="module_activity"
-                            name="stage"
+                            key="stage"
                             placeholder="Stage"
                             pass_id="form-fields"
                             realtime="true">
@@ -175,7 +175,7 @@
                             <ul
                                 array="module_activity"
                                 pass_to="me1234"
-                                filter-name="module_id"
+                                filter-key="module_id"
                                 filter-value="5e6d79f9d8cdbe53927a0443"
                                 render-selector="[template]"
                                 class="options overflow:auto">
@@ -187,7 +187,7 @@
                                     <p
                                         array="module_activity"
                                         object=""
-                                        name="name"
+                                        key="name"
                                         pass_id="me1234">
                                         Stage Name
                                     </p>
@@ -200,7 +200,7 @@
                         <!-- CoCreate Select -->
                         <div
                             class="select--field sortable floating-label"
-                            name="members"
+                            key="members"
                             multiple
                             placeholder="Members"
                             pass_id="form-fields">
@@ -223,14 +223,14 @@
                                             <span
                                                 array="users"
                                                 object=""
-                                                name="name"
+                                                key="name"
                                                 class="first-letter avatar-name"
                                                 >B</span
                                             >
                                             <span
                                                 array="users"
                                                 object=""
-                                                name="profile_image"
+                                                key="profile_image"
                                                 class="avatar-image">
                                                 <img
                                                     src="/_static/Velazquez.jpg"
@@ -245,7 +245,7 @@
                                             class="avatar-title"
                                             array="users"
                                             object=""
-                                            name="name"
+                                            key="name"
                                             pass_id="me1234">
                                             user name
                                         </p>
@@ -253,7 +253,7 @@
                                             class="avatar-subtitle"
                                             array="users"
                                             object=""
-                                            name="email"
+                                            key="email"
                                             pass_id="me1234"></p>
                                     </div>
                                 </li>
@@ -267,7 +267,7 @@
                         <!-- CoCreate Select -->
                         <div
                             class="select--field sortable floating-label"
-                            name="labels"
+                            key="labels"
                             multiple
                             placeholder="Labels"
                             pass_id="form-fields">
@@ -291,7 +291,7 @@
                         <!-- CoCreate Select -->
                         <div
                             class="select--field sortable floating-label"
-                            name="status"
+                            key="status"
                             multiple
                             placeholder="Status"
                             pass_id="form-fields">
@@ -314,14 +314,14 @@
                                             <span
                                                 array="users"
                                                 object=""
-                                                name="name"
+                                                key="name"
                                                 class="first-letter avatar-name"
                                                 >B</span
                                             >
                                             <span
                                                 array="users"
                                                 object=""
-                                                name="profile_image"
+                                                key="profile_image"
                                                 class="avatar-image">
                                                 <img
                                                     src="/_static/Velazquez.jpg"
@@ -336,7 +336,7 @@
                                             class="avatar-title"
                                             array="users"
                                             object=""
-                                            name="name"
+                                            key="name"
                                             pass_id="me1234">
                                             user name
                                         </p>
@@ -344,7 +344,7 @@
                                             class="avatar-subtitle"
                                             array="users"
                                             object=""
-                                            name="email"
+                                            key="email"
                                             pass_id="me1234"></p>
                                     </div>
                                 </li>
@@ -357,12 +357,12 @@
                 <div
                     id="domEditor1"
                     class="domEditor"
-                    name="tasklists"
+                    key="tasklists"
                     pass_id="form-fields">
                     <div
                         sortable
                         class="display:flex align-items-flex-start flex-wrap-wrap"
-                        dnd-group-name="tasklist">
+                        dnd-group-key="tasklist">
                         <!-- sortable card -->
                         <div id="tasklist" class="card template">
                             <div
@@ -372,7 +372,7 @@
                                         array="module_activity"
                                         pass_id="form-fields"
                                         object=""
-                                        name="clone-name"
+                                        key="clone-name"
                                         id="stage-name"
                                         class="input_field"
                                         placeholder="Tasklist" />
@@ -396,7 +396,7 @@
                                             "></div>
                                     </div>
                                 </div>
-                                <div sortable dnd-group-name="task-items">
+                                <div sortable dnd-group-key="task-items">
                                     <!-- sortable task item -->
                                     <div
                                         id="task-item"
@@ -404,14 +404,14 @@
                                         <label class="checkbox">
                                             <input
                                                 type="checkbox"
-                                                name="taskcheck" /><span
+                                                key="taskcheck" /><span
                                                 class="mark display:inline-block"></span>
                                         </label>
                                         <div class="flex-grow-1">
                                             <input
                                                 class="floating-label"
                                                 object="5d8c79e7e4be424681b5e48d"
-                                                name="taskname"
+                                                key="taskname"
                                                 placeholder="Task Name" />
                                         </div>
                                         <a
@@ -448,7 +448,7 @@
                         actions="clone"
                         class="noDrag"
                         style="display: block"
-                        clone-name="tasklist-name"
+                        clone-key="tasklist-name"
                         >New Tasklist</a
                     >
                 </div>
@@ -456,7 +456,7 @@
                 <!--<div class="display:flex align-items-center padding:20px-top">-->
                 <!--  <div class='avatar padding:20px-right margin:10px-top'></div>-->
                 <!--  <div class="flex-1-1">-->
-                <!--    <input object="5e07c2a43145e2497e494bf0" type="text" name="name" class="floating-label" placeholder="Comment">-->
+                <!--    <input object="5e07c2a43145e2497e494bf0" type="text" key="name" class="floating-label" placeholder="Comment">-->
                 <!--  </div>-->
                 <!--</div>-->
                 <!--<div class="padding:20px-top">-->

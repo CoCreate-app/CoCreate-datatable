@@ -200,14 +200,14 @@
                         <input
                             type="text"
                             class="floating-label"
-                            filter-name="name"
+                            filter-key="name"
                             filter-closest="table; tbody"
                             placeholder="Name" />
                         <span
                             class="position:absolute bottom:20px right:20px float:right z-index:6">
                             <!-- need a solution to update toggle value="desc|asc" and define and upadte icons... show hide works great but to much html and orderby only has 2 values -->
                             <a
-                                filter-sort-name="name"
+                                filter-sort-key="name"
                                 filter-sort-toggle
                                 filter-closest="table; tbody">
                                 <i></i>
@@ -219,13 +219,13 @@
                         <input
                             type="text"
                             class="floating-label"
-                            filter-name="_id"
+                            filter-key="_id"
                             filter-closest="table; tbody"
                             placeholder="Document_id" />
                         <span
                             class="position:absolute bottom:20px right:20px float:right z-index:6">
                             <a
-                                filter-sort-name="_id"
+                                filter-sort-key="_id"
                                 value=""
                                 filter-sort-direction="asc"
                                 click-value="desc, asc"
@@ -239,7 +239,7 @@
                 <tbody
                     array="modules"
                     filter-limit=""
-                    filter-sort-name="name"
+                    filter-sort-key="name"
                     filter-sort-direction="asc"
                     render-selector="[template]"
                     class="display:flex flex-direction:column height:100%"
@@ -253,7 +253,7 @@
                                 <div class="">
                                     <span
                                         object="_id"
-                                        name="icon"
+                                        key="icon"
                                         value="icon"></span>
                                 </div>
                                 <div>
@@ -273,7 +273,7 @@
                                             pass_id="render"></div>
                                     </a>
                                     <h5
-                                        name="description"
+                                        key="description"
                                         value="description"></h5>
                                 </div>
                             </div>
