@@ -1,3 +1,19 @@
+# [1.5.0](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.27...v1.5.0) (2023-08-16)
+
+
+### Bug Fixes
+
+* crud attributes renamed ([be09dc1](https://github.com/CoCreate-app/CoCreate-datatable/commit/be09dc1cc9d657638a618d93a0da4296a8445e5d))
+* replace -target -selector ([b707c6d](https://github.com/CoCreate-app/CoCreate-datatable/commit/b707c6da68d15255b3fcaffbc3ea954ab091a110))
+* updated fetch-limit to filter-limit ([fb41eff](https://github.com/CoCreate-app/CoCreate-datatable/commit/fb41eff3bd705ab7389adf286a49612a5d27af39))
+* webpack.config and package.json make use of mode=production instead of process.env ([fb92050](https://github.com/CoCreate-app/CoCreate-datatable/commit/fb92050673f4a6f3e9f511214d67c615b47448ff))
+
+
+### Features
+
+* name attribute and variable renamed to key ([6efb209](https://github.com/CoCreate-app/CoCreate-datatable/commit/6efb20950d1ee33533b1557839856bc557954f84))
+* update template_id to render-selector attribute. update filter attributes to filter selector-attributes ([fd098f0](https://github.com/CoCreate-app/CoCreate-datatable/commit/fd098f0e5e927da5c0d9c656c9cedc1e9e432c1f))
+
 ## [1.4.27](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.4.26...v1.4.27) (2023-06-14)
 
 
