@@ -1,3 +1,12 @@
+## [1.6.1](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.6.0...v1.6.1) (2023-08-21)
+
+
+### Bug Fixes
+
+* /dist/CoCreate.js updated to https://CoCreate.app/dist/CoCreate.js ([a3609b8](https://github.com/CoCreate-app/CoCreate-datatable/commit/a3609b809ffba77e3aa780165c5f07c0638d99b7))
+* replace cdn with /dist ([f94860b](https://github.com/CoCreate-app/CoCreate-datatable/commit/f94860b3f3fa1e769b629117ccb9f38c873c5e91))
+* update file uploader ([387f64d](https://github.com/CoCreate-app/CoCreate-datatable/commit/387f64db5ae07ad821bed051f7becdef0ca7cda8))
+
 # [1.6.0](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.5.0...v1.6.0) (2023-08-17)
 
 
