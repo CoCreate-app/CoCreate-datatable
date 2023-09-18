@@ -1,3 +1,11 @@
+## [1.7.2](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.7.1...v1.7.2) (2023-09-18)
+
+
+### Bug Fixes
+
+*  Add path and pathname ([71e9b3d](https://github.com/CoCreate-app/CoCreate-datatable/commit/71e9b3d846fd73c00456ccc9b0c8cc63ab81ff7e))
+* Update CoCreate depndencies to latest versions ([457d730](https://github.com/CoCreate-app/CoCreate-datatable/commit/457d7309ee208288f736907bb6b4041adfa3d998))
+
 ## [1.7.1](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.7.0...v1.7.1) (2023-08-21)
 
 
