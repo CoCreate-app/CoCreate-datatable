@@ -1,3 +1,10 @@
+## [1.7.3](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.7.2...v1.7.3) (2023-10-16)
+
+
+### Bug Fixes
+
+* replaced deleteDocuments with delete ([f9764fc](https://github.com/CoCreate-app/CoCreate-datatable/commit/f9764fc02a27f9d178547985973d6999a722044d))
+
 ## [1.7.2](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.7.1...v1.7.2) (2023-09-18)
 
 
