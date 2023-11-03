@@ -1,3 +1,12 @@
+## [1.7.5](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.7.4...v1.7.5) (2023-11-03)
+
+
+### Bug Fixes
+
+* favicon.ico path ([b5cbf26](https://github.com/CoCreate-app/CoCreate-datatable/commit/b5cbf26ad10ee8e3d6fa41fd81da25c2c672d47f))
+* removed apikey.js ([52e6ae3](https://github.com/CoCreate-app/CoCreate-datatable/commit/52e6ae3d79c79b26d13a9e6c039507d6d0cf337b))
+* update dependencies to the lates versions ([3182825](https://github.com/CoCreate-app/CoCreate-datatable/commit/3182825ee7d15800a9d11b4c3d307ab0e77a607d))
+
 ## [1.7.4](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.7.3...v1.7.4) (2023-10-25)
 
 
