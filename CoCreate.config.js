@@ -12,8 +12,7 @@ module.exports = {
                 "pathname": "/docs/datatable/index.html",
                 "src": "{{./docs/index.html}}",
                 "host": [
-                    "*",
-                    "general.cocreate.app"
+                    "*"
                 ],
                 "directory": "datatable",
                 "content-type": "{{content-type}}",
