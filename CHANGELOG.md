@@ -1,3 +1,11 @@
+## [1.7.6](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.7.5...v1.7.6) (2023-11-09)
+
+
+### Bug Fixes
+
+* meta name typo ([6ce7320](https://github.com/CoCreate-app/CoCreate-datatable/commit/6ce732096920c793307de91a3937753558380597))
+* update host ([1d5caf5](https://github.com/CoCreate-app/CoCreate-datatable/commit/1d5caf5f6943a546074b8e510d763f7040547729))
+
 ## [1.7.5](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.7.4...v1.7.5) (2023-11-03)
 
 
