@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.7.7...v1.8.0) (2023-11-19)
+
+
+### Features
+
+* update dependecies for th latest features and bug fixes ([b7d1396](https://github.com/CoCreate-app/CoCreate-datatable/commit/b7d139671d5197d971106db578a6f1d56fd4fd18))
+
 ## [1.7.7](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.7.6...v1.7.7) (2023-11-12)
 
 
