@@ -106,20 +106,20 @@
 
                 <li class="margin-right:15px">
                     <a
-                        actions="pass, openModal"
+                        actions="state, openModal"
                         modal-src="render.html"
-                        pass-array="modules"
-                        pass-object=""
-                        pass_to="builder"
+                        state-array="modules"
+                        state-object=""
+                        state_to="builder"
                         modal-width="100%"
-                        pass_id="render">
+                        state_id="render">
                         <i
                             class="display:flex height:18px fill:#505050"
                             src="/assets/svg/palette.svg"></i>
                         <div
-                            pass-array="modules"
-                            pass-object=""
-                            pass_to="render"
+                            state-array="modules"
+                            state-object=""
+                            state_to="render"
                             class="sessionBuilderUI_Id"></div>
                     </a>
                 </li>
@@ -129,7 +129,7 @@
                         actions="deleteDocument, closeModal"
                         array="module_activity"
                         object=""
-                        pass_id="form-fields"
+                        state_id="form-fields"
                         ><i
                             class="height:18px fill:#505050"
                             src="/assets/svg/trash-alt.svg"></i
@@ -142,19 +142,19 @@
                 <input
                     type="hidden"
                     key="module_id"
-                    pass_id="module_id"
+                    state_id="module_id"
                     placeholder="Module Id" />
 
                 <input
                     type="text"
                     key="name"
-                    pass_id="form-fields"
+                    state_id="form-fields"
                     class="floating-label"
                     placeholder="Title" />
 
                 <textarea
                     key="description"
-                    pass_id="form-fields"
+                    state_id="form-fields"
                     placeholder="Description"
                     class="floating-label"></textarea>
 
@@ -166,7 +166,7 @@
                             array="module_activity"
                             key="stage"
                             placeholder="Stage"
-                            pass_id="form-fields"
+                            state_id="form-fields"
                             realtime="true">
                             <input
                                 placeholder="Search"
@@ -174,7 +174,7 @@
                                 filter-search />
                             <ul
                                 array="module_activity"
-                                pass_to="me1234"
+                                state_to="me1234"
                                 filter-key="module_id"
                                 filter-value="5e6d79f9d8cdbe53927a0443"
                                 render-selector="[template]"
@@ -183,12 +183,12 @@
                                     class="option display:flex margin:5px"
                                     template
                                     value=""
-                                    pass_id="me1234">
+                                    state_id="me1234">
                                     <p
                                         array="module_activity"
                                         object=""
                                         key="name"
-                                        pass_id="me1234">
+                                        state_id="me1234">
                                         Stage Name
                                     </p>
                                 </li>
@@ -203,20 +203,20 @@
                             key="members"
                             multiple
                             placeholder="Members"
-                            pass_id="form-fields">
+                            state_id="form-fields">
                             <input
                                 placeholder="Search"
                                 filter-parent="array"
                                 filter-search />
                             <ul
                                 array="users"
-                                pass_to="me1234"
+                                state_to="me1234"
                                 render-selector="[template]"
                                 class="options overflow:auto">
                                 <li
                                     class="option display:flex margin:5px"
                                     template
-                                    pass_id="me1234">
+                                    state_id="me1234">
                                     <!-- Avatar with label and status only-->
                                     <div class="avatar-wrapper">
                                         <a class="avatar round">
@@ -246,7 +246,7 @@
                                             array="users"
                                             object=""
                                             key="name"
-                                            pass_id="me1234">
+                                            state_id="me1234">
                                             user name
                                         </p>
                                         <p
@@ -254,7 +254,7 @@
                                             array="users"
                                             object=""
                                             key="email"
-                                            pass_id="me1234"></p>
+                                            state_id="me1234"></p>
                                     </div>
                                 </li>
                             </ul>
@@ -270,7 +270,7 @@
                             key="labels"
                             multiple
                             placeholder="Labels"
-                            pass_id="form-fields">
+                            state_id="form-fields">
                             <input class="option-search" placeholder="Search" />
                             <ul class="options overflow:auto">
                                 <li
@@ -294,7 +294,7 @@
                             key="status"
                             multiple
                             placeholder="Status"
-                            pass_id="form-fields">
+                            state_id="form-fields">
                             <input
                                 placeholder="Search"
                                 filter-parent="array"
@@ -302,12 +302,12 @@
                             <ul
                                 array="users"
                                 render-selector="[template]"
-                                pass_to="me1234"
+                                state_to="me1234"
                                 class="options overflow:auto">
                                 <li
                                     class="option display:flex margin:5px"
                                     template
-                                    pass_id="me1234">
+                                    state_id="me1234">
                                     <!-- Avatar with label and status only-->
                                     <div class="avatar-wrapper">
                                         <a class="avatar round">
@@ -337,7 +337,7 @@
                                             array="users"
                                             object=""
                                             key="name"
-                                            pass_id="me1234">
+                                            state_id="me1234">
                                             user name
                                         </p>
                                         <p
@@ -345,7 +345,7 @@
                                             array="users"
                                             object=""
                                             key="email"
-                                            pass_id="me1234"></p>
+                                            state_id="me1234"></p>
                                     </div>
                                 </li>
                             </ul>
@@ -358,7 +358,7 @@
                     id="domEditor1"
                     class="domEditor"
                     key="tasklists"
-                    pass_id="form-fields">
+                    state_id="form-fields">
                     <div
                         sortable
                         class="display:flex align-items-flex-start flex-wrap-wrap"
@@ -370,7 +370,7 @@
                                 <span class="display:inline-block">
                                     <input
                                         array="module_activity"
-                                        pass_id="form-fields"
+                                        state_id="form-fields"
                                         object=""
                                         key="clone-name"
                                         id="stage-name"
