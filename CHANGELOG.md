@@ -1,3 +1,16 @@
+# [1.9.0](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.8.0...v1.9.0) (2023-11-25)
+
+
+### Bug Fixes
+
+* pass attributes renamed to state ([c8d7dbd](https://github.com/CoCreate-app/CoCreate-datatable/commit/c8d7dbd14df8882d082916f941f81b794a410b19))
+* update nav, edit button and css path ([3bd4163](https://github.com/CoCreate-app/CoCreate-datatable/commit/3bd4163839615fbd972354f5fc907a4fccb92e7d))
+
+
+### Features
+
+* upgrade dependencies for latest features and fixes ([1f52b53](https://github.com/CoCreate-app/CoCreate-datatable/commit/1f52b53e7cfc570a4dffb74e4b84987867179b61))
+
 # [1.8.0](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.7.7...v1.8.0) (2023-11-19)
 
 
