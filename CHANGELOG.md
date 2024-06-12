@@ -1,3 +1,11 @@
+## [1.10.3](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.10.2...v1.10.3) (2024-06-12)
+
+
+### Bug Fixes
+
+* bump cocreate dependencies ([2980819](https://github.com/CoCreate-app/CoCreate-datatable/commit/29808198b217de0291afe661e705ea08170bbebf))
+* svg icon class ([020592e](https://github.com/CoCreate-app/CoCreate-datatable/commit/020592eb695cdfa30c0cb0c6f0a71b583af12228))
+
 ## [1.10.2](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.10.1...v1.10.2) (2024-04-29)
 
 
