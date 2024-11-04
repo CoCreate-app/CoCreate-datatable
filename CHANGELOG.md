@@ -1,3 +1,16 @@
+# [1.11.0](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.10.3...v1.11.0) (2024-11-04)
+
+
+### Bug Fixes
+
+* pretier.config.js and file formating ([6813c37](https://github.com/CoCreate-app/CoCreate-datatable/commit/6813c3782035e4b40da329c522801c433390a951))
+
+
+### Features
+
+* add prettier.config.js and format files ([67e853d](https://github.com/CoCreate-app/CoCreate-datatable/commit/67e853d8a9d2093178076aabb46a07cd4520972b))
+* add prettier.config.js and format files ([77d2f12](https://github.com/CoCreate-app/CoCreate-datatable/commit/77d2f1284285743e7e3181d73528c589c2c90e01))
+
 ## [1.10.3](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.10.2...v1.10.3) (2024-06-12)
 
 
