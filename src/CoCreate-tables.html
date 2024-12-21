@@ -1,300 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="../assets/favicon.ico" />
-        <title>Datatables | CoCreate</title>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="../assets/favicon.ico" />
+		<title>Datatables | CoCreate</title>
 
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-            crossorigin="anonymous" />
-        <link rel="manifest" href="/manifest.webmanifest" />
-    </head>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+			crossorigin="anonymous" />
+		<link rel="manifest" href="/manifest.webmanifest" />
+	</head>
 
-    <style>
-        a[filter-sort-toggle]:before {
-            font-family: "Font Awesome 5 Free";
-            content: "\f0dc";
-            font-weight: 900;
-        }
-        a[filter-sort-toggle="asc"]:before {
-            font-family: "Font Awesome 5 Free";
-            content: "\f0de";
-            font-weight: 900;
-        }
-        a[filter-sort-toggle="desc"]:before {
-            font-family: "Font Awesome 5 Free";
-            content: "\f0dd";
-            font-weight: 900;
-        }
-    </style>
+	<style>
+		a[filter-sort-toggle]:before {
+			font-family: "Font Awesome 5 Free";
+			content: "\f0dc";
+			font-weight: 900;
+		}
+		a[filter-sort-toggle="asc"]:before {
+			font-family: "Font Awesome 5 Free";
+			content: "\f0de";
+			font-weight: 900;
+		}
+		a[filter-sort-toggle="desc"]:before {
+			font-family: "Font Awesome 5 Free";
+			content: "\f0dd";
+			font-weight: 900;
+		}
+	</style>
 
-    <body class="width:fit-content overflow:auto">
-        <!-- Navbar -->
-        <nav
-            class="nav display:flex align-items:center background:whitesmoke position:sticky left:0 width:100vw"
-            content_id="content"
-            scroll-effect="hide-nav"
-            scroll-up="1"
-            scroll-down="1">
-            <!-- Menu Icon Animations -->
-            <a class="nav-toggle menu_icon--Vdots" toggle-sidenav="menuL">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </a>
+	<body class="width:fit-content overflow:auto">
+		<!-- Navbar -->
+		<nav
+			class="nav display:flex align-items:center background:whitesmoke position:sticky left:0 width:100vw"
+			content_id="content"
+			scroll-effect="hide-nav"
+			scroll-up="1"
+			scroll-down="1">
+			<!-- Menu Icon Animations -->
+			<a class="nav-toggle menu_icon--Vdots" toggle-sidenav="menuL">
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+			</a>
 
-            <!-- Horizontal Scroll Nav/Tabs -->
-            <ul
-                class="overflow:auto display:inline-flex direction:rtl font-size:20px align-items:center list-style-type:none width:100% height:50px">
-                <!-- Modal Controls -->
-                <li class="margin-right:15px">
-                    <a actions="closeModal"
-                        ><i class="height:18px" src="/assets/svg/times.svg"></i
-                    ></a>
-                </li>
-                <li class="margin-right:15px">
-                    <a actions="minMaxModal">
-                        <i
-                            toggle="/assets/svg/window-restore.svg, /assets/svg/window-maximize.svg"
-                            toggle-attribute="src"
-                            class="height:18px"
-                            src="/assets/svg/window-maximize.svg"></i>
-                    </a>
-                </li>
-                <li class="margin-right:15px">
-                    <a actions="parkModal"
-                        ><i class="far fa-window-minimize"> </i
-                    ></a>
-                </li>
+			<!-- Horizontal Scroll Nav/Tabs -->
+			<ul
+				class="overflow:auto display:inline-flex direction:rtl font-size:20px align-items:center list-style-type:none width:100% height:50px">
+				<!-- Modal Controls -->
+				<li class="margin-right:15px">
+					<a actions="closeModal"
+						><i class="height:18px" src="/assets/svg/times.svg"></i
+					></a>
+				</li>
+				<li class="margin-right:15px">
+					<a actions="minMaxModal">
+						<i
+							toggle="/assets/svg/window-restore.svg, /assets/svg/window-maximize.svg"
+							toggle-attribute="src"
+							class="height:18px"
+							src="/assets/svg/window-maximize.svg"></i>
+					</a>
+				</li>
+				<li class="margin-right:15px">
+					<a actions="parkModal"
+						><i class="far fa-window-minimize"> </i
+					></a>
+				</li>
 
-                <!-- fullscreen toogle and icon transform-->
-                <li class="margin-right:15px">
-                    <a fullscreen>
-                        <i class="height:18px" src="/assets/svg/expand.svg"></i>
-                        <i
-                            class="height:18px"
-                            src="/assets/svg/compress.svg"></i>
-                    </a>
-                </li>
+				<!-- fullscreen toogle and icon transform-->
+				<li class="margin-right:15px">
+					<a fullscreen>
+						<i class="height:18px" src="/assets/svg/expand.svg"></i>
+						<i
+							class="height:18px"
+							src="/assets/svg/compress.svg"></i>
+					</a>
+				</li>
 
-                <!-- Render Builder -->
-                <li class="margin-right:15px">
-                    <a
-                        actions="state, openModal"
-                        modal-src="render.html"
-                        state-array="modules"
-                        state-object=""
-                        state_to="builder"
-                        modal-width="100%"
-                        state_id="render">
-                        <i
-                            class="height:18px"
-                            src="/assets/svg/palette.svg"></i>
-                        <div
-                            state-array="modules"
-                            state-object=""
-                            state_to="render"
-                            class="sessionBuilderUI_id"></div>
-                    </a>
-                </li>
+				<!-- Render Builder -->
+				<li class="margin-right:15px">
+					<a
+						actions="state, openModal"
+						modal-src="render.html"
+						state-array="modules"
+						state-object=""
+						state_to="builder"
+						modal-width="100%"
+						state_id="render">
+						<i
+							class="height:18px"
+							src="/assets/svg/palette.svg"></i>
+						<div
+							state-array="modules"
+							state-object=""
+							state_to="render"
+							class="sessionBuilderUI_id"></div>
+					</a>
+				</li>
 
-                <!-- Render Module Form -->
-                <li class="margin-right:15px">
-                    <a
-                        actions="state, openModal"
-                        modal-src="form.html"
-                        state-array="modules"
-                        state-object=""
-                        state_to="render"
-                        modal-width="320px"
-                        modal-height="100%"
-                        modal-color="#229954"
-                        modal-header="false"
-                        modal-x=""
-                        modal-y=""
-                        state_id="render">
-                        <i class="height:16px" src="/assets/svg/plus.svg"></i>
-                    </a>
-                </li>
+				<!-- Render Module Form -->
+				<li class="margin-right:15px">
+					<a
+						actions="state, openModal"
+						modal-src="form.html"
+						state-array="modules"
+						state-object=""
+						state_to="render"
+						modal-width="320px"
+						modal-height="100%"
+						modal-color="#229954"
+						modal-header="false"
+						modal-x=""
+						modal-y=""
+						state_id="render">
+						<i class="height:16px" src="/assets/svg/plus.svg"></i>
+					</a>
+				</li>
 
-                <!-- Datatable Controls -->
-                <li class="margin-right:15px">
-                    <a actions="delete" array=""
-                        ><i
-                            class="height:18px"
-                            src="/assets/svg/trash-alt.svg"></i
-                    ></a>
-                </li>
-                <li class="margin-right:15px">
-                    <a toggle="hidden" toogle-selector="#column-visibility"
-                        ><i class="height:18px" src="/assets/svg/eye.svg"></i
-                    ></a>
-                </li>
-                <li class="margin-right:15px">
-                    <a actions="export" export-closest="nav; [render-selector]"
-                        ><i
-                            class="height:18px"
-                            src="/assets/svg/file-download.svg"></i
-                    ></a>
-                </li>
-                <li class="margin-right:15px">
-                    <a actions="import" array="" state_id="datatable"
-                        ><i
-                            class="height:18px"
-                            src="/assets/svg/file-upload.svg"></i
-                    ></a>
-                </li>
-                <li class="margin-right:15px">
-                    <a actions="copy" copy-selector="tbody"
-                        ><i class="height:18px" src="/assets/svg/copy.svg"></i
-                    ></a>
-                </li>
-                <li class="margin-right:15px">
-                    <a actions="print" print-closest="nav; parent; tbody"
-                        ><i class="height:18px" src="/assets/svg/print.svg"></i
-                    ></a>
-                </li>
-            </ul>
-        </nav>
+				<!-- Datatable Controls -->
+				<li class="margin-right:15px">
+					<a actions="delete" array=""
+						><i
+							class="height:18px"
+							src="/assets/svg/trash-alt.svg"></i
+					></a>
+				</li>
+				<li class="margin-right:15px">
+					<a toggle="hidden" toogle-selector="#column-visibility"
+						><i class="height:18px" src="/assets/svg/eye.svg"></i
+					></a>
+				</li>
+				<li class="margin-right:15px">
+					<a actions="export" export-closest="nav; [render-selector]"
+						><i
+							class="height:18px"
+							src="/assets/svg/file-download.svg"></i
+					></a>
+				</li>
+				<li class="margin-right:15px">
+					<a actions="import" array="" state_id="datatable"
+						><i
+							class="height:18px"
+							src="/assets/svg/file-upload.svg"></i
+					></a>
+				</li>
+				<li class="margin-right:15px">
+					<a actions="copy" copy-selector="tbody"
+						><i class="height:18px" src="/assets/svg/copy.svg"></i
+					></a>
+				</li>
+				<li class="margin-right:15px">
+					<a actions="print" print-closest="nav; parent; tbody"
+						><i class="height:18px" src="/assets/svg/print.svg"></i
+					></a>
+				</li>
+			</ul>
+		</nav>
 
-        <!-- Modal Viewport -->
-        <div
-            class="position:fixed margin-top:50px"
-            content_id="content"
-            id="modal-viewport"></div>
+		<!-- Modal Viewport -->
+		<div
+			class="position:fixed margin-top:50px"
+			content_id="content"
+			id="modal-viewport"></div>
 
-        <!-- Main Content -->
-        <div content_id="content" class="padding:5px">
-            <table class="width:100% border-collapse:collapse">
-                <tr class="border-bottom:1px_solid_darkgray">
-                    <td
-                        class="position:sticky top:0 background:white padding:0px_10px_10px">
-                        <input
-                            type="text"
-                            class="floating-label"
-                            filter-key="name"
-                            filter-closest="table; tbody"
-                            placeholder="Name" />
-                        <span
-                            class="position:absolute bottom:22px right:20px float:right z-index:6">
-                            <!-- need a solution to update toggle value="desc|asc" and define and upadte icons... show hide works great but to much html and orderby only has 2 values -->
-                            <a
-                                filter-sort-key="name"
-                                filter-sort-toggle
-                                filter-closest="table; tbody">
-                                <i></i>
-                            </a>
-                        </span>
-                    </td>
-                    <td
-                        class="position:sticky top:0 background:white padding:0px_10px_10px">
-                        <input
-                            type="text"
-                            class="floating-label"
-                            filter-key="_id"
-                            filter-closest="table; tbody"
-                            placeholder="Document_id" />
-                        <span
-                            class="position:absolute bottom:22px right:20px float:right z-index:6">
-                            <a
-                                filter-sort-key="_id"
-                                value=""
-                                filter-sort-direction="asc"
-                                click-value="desc, asc"
-                                click-attribute="filter-sort-direction"
-                                filter-closest="table; tbody">
-                            </a>
-                        </span>
-                    </td>
-                </tr>
+		<!-- Main Content -->
+		<div content_id="content" class="padding:5px">
+			<table class="width:100% border-collapse:collapse">
+				<tr class="border-bottom:1px_solid_darkgray">
+					<td
+						class="position:sticky top:0 background:white padding:0px_10px_10px">
+						<input
+							type="text"
+							class="floating-label"
+							filter-query-key="name"
+							filter-closest="table; tbody"
+							placeholder="Name" />
+						<span
+							class="position:absolute bottom:22px right:20px float:right z-index:6">
+							<!-- need a solution to update toggle value="desc|asc" and define and upadte icons... show hide works great but to much html and orderby only has 2 values -->
+							<a
+								filter-sort-key="name"
+								filter-sort-toggle
+								filter-closest="table; tbody">
+								<i></i>
+							</a>
+						</span>
+					</td>
+					<td
+						class="position:sticky top:0 background:white padding:0px_10px_10px">
+						<input
+							type="text"
+							class="floating-label"
+							filter-query-key="_id"
+							filter-closest="table; tbody"
+							placeholder="Document_id" />
+						<span
+							class="position:absolute bottom:22px right:20px float:right z-index:6">
+							<a
+								filter-sort-key="_id"
+								value=""
+								filter-sort-direction="asc"
+								click-value="desc, asc"
+								click-attribute="filter-sort-direction"
+								filter-closest="table; tbody">
+							</a>
+						</span>
+					</td>
+				</tr>
 
-                <tbody
-                    array="modules"
-                    filter-limit=""
-                    filter-sort-key="name"
-                    filter-sort-direction="asc"
-                    render-selector="[template]"
-                    class="display:flex flex-direction:column height:100%"
-                    state_to="me1234">
-                    <tr
-                        class="border-bottom:1px_solid_darkgray"
-                        template
-                        state_id="me1234">
-                        <td class="padding:10px">
-                            <div class="display:flex min-width:200px">
-                                <div class="">
-                                    <span
-                                        object="_id"
-                                        key="icon"
-                                        value="icon"></span>
-                                </div>
-                                <div>
-                                    <a
-                                        actions="state, openModal"
-                                        modal-src="render.html"
-                                        state-array="module_activity"
-                                        state-object="{{object._id}}"
-                                        state_to="form-fields"
-                                        modal-width="320px"
-                                        modal-color="#229954">
-                                        <h4>{{object.name}}</h4>
-                                        <div
-                                            state-array="modules"
-                                            state-object=""
-                                            state_to="render"
-                                            state_id="render"></div>
-                                    </a>
-                                    <h5
-                                        key="description"
-                                        value="description"></h5>
-                                </div>
-                            </div>
-                        </td>
-                        <td class="padding:10px">
-                            <a
-                                actions="state, openModal"
-                                modal-src="render.html"
-                                state-object=""
-                                state-array="module_activity"
-                                state_to="form-fields"
-                                modal-width="320px"
-                                modal-color="#229954">
-                                <b value="{{object._id}}">Module Id</b>
-                                <div
-                                    state-array="modules"
-                                    state-object=""
-                                    state_to="render"></div>
-                            </a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+				<tbody
+					array="modules"
+					filter-limit=""
+					filter-sort-key="name"
+					filter-sort-direction="asc"
+					render-selector="[template]"
+					class="display:flex flex-direction:column height:100%"
+					state_to="me1234">
+					<tr
+						class="border-bottom:1px_solid_darkgray"
+						template
+						state_id="me1234">
+						<td class="padding:10px">
+							<div class="display:flex min-width:200px">
+								<div class="">
+									<span
+										object="_id"
+										key="icon"
+										value="icon"></span>
+								</div>
+								<div>
+									<a
+										actions="state, openModal"
+										modal-src="render.html"
+										state-array="module_activity"
+										state-object="{{object._id}}"
+										state_to="form-fields"
+										modal-width="320px"
+										modal-color="#229954">
+										<h4>{{object.name}}</h4>
+										<div
+											state-array="modules"
+											state-object=""
+											state_to="render"
+											state_id="render"></div>
+									</a>
+									<h5
+										key="description"
+										value="description"></h5>
+								</div>
+							</div>
+						</td>
+						<td class="padding:10px">
+							<a
+								actions="state, openModal"
+								modal-src="render.html"
+								state-object=""
+								state-array="module_activity"
+								state_to="form-fields"
+								modal-width="320px"
+								modal-color="#229954">
+								<b value="{{object._id}}">Module Id</b>
+								<div
+									state-array="modules"
+									state-object=""
+									state_to="render"></div>
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 
-        <button
-            actions="state, openModal"
-            modal-src="render.html"
-            state-array="modules"
-            state-object=""
-            state_to="render"
-            modal-width="320px"
-            modal-height="100%"
-            modal-color="#229954"
-            class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue color:#fff font-size:1.5rem grow-hover border-radius:50% border-width:0 box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4) z-index:8"
-            state_id="render">
-            <i src="/assets/svg/plus.svg"></i>
-        </button>
+		<button
+			actions="state, openModal"
+			modal-src="render.html"
+			state-array="modules"
+			state-object=""
+			state_to="render"
+			modal-width="320px"
+			modal-height="100%"
+			modal-color="#229954"
+			class="position:fixed bottom:15px right:15px padding:15px background:dodgerblue color:#fff font-size:1.5rem grow-hover border-radius:50% border-width:0 box-shadow:0px_2px_10px_0px_rgba(0,_0,_0,_0.4) z-index:8"
+			state_id="render">
+			<i src="/assets/svg/plus.svg"></i>
+		</button>
 
-        <script src="https://CoCreate.app/dist/CoCreate.js"></script>
-    </body>
+		<script src="https://CoCreate.app/dist/CoCreate.js"></script>
+	</body>
 </html>

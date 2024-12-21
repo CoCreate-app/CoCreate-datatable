@@ -1,494 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>datatable demo</title>
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="../assets/favicon.ico" />
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>datatable demo</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="../assets/favicon.ico" />
 
-        <style type="text/css">
-            .flex-half {
-                flex-grow: 1;
-                flex-basis: 50%;
-            }
-            flex-basis-50precent {
-                flex-basis: 50%;
-            }
+		<style type="text/css">
+			.flex-half {
+				flex-grow: 1;
+				flex-basis: 50%;
+			}
+			flex-basis-50precent {
+				flex-basis: 50%;
+			}
 
-            .flex-half:nth-of-type(1) {
-                padding-right: 10px;
-            }
+			.flex-half:nth-of-type(1) {
+				padding-right: 10px;
+			}
 
-            .flex-half:nth-of-type(2) {
-                padding-left: 10px;
-            }
+			.flex-half:nth-of-type(2) {
+				padding-left: 10px;
+			}
 
-            .round-iconBtn {
-                background-color: #dedede;
-                color: grey;
-                font-size: 20px;
-                border-radius: 50px;
-                width: 50px;
-                height: 50px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+			.round-iconBtn {
+				background-color: #dedede;
+				color: grey;
+				font-size: 20px;
+				border-radius: 50px;
+				width: 50px;
+				height: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
 
-            .comment-content {
-                padding: 10px;
-                padding-right: 15px;
-                border: 1px solid #dedede;
-                border-radius: 3px 20px 20px 3px;
-            }
-            .floating-label {
-                margin: 10px;
-            }
-        </style>
-        <link rel="manifest" href="/manifest.webmanifest" />
-    </head>
+			.comment-content {
+				padding: 10px;
+				padding-right: 15px;
+				border: 1px solid #dedede;
+				border-radius: 3px 20px 20px 3px;
+			}
+			.floating-label {
+				margin: 10px;
+			}
+		</style>
+		<link rel="manifest" href="/manifest.webmanifest" />
+	</head>
 
-    <body>
-        <div id="modal-viewport" hidden></div>
-        <div
-            content_id="content"
-            class="nav width:100% display:flex align-items-center bg-light-gray"
-            scroll-effect="hide-nav"
-            scroll-position="50">
-            <!--<a href="#" class="logo">Navbar</a>-->
-            <!--<a class="nav-toggle menu_icon--Vdots" toggle-sidenav="menuL">-->
-            <!--  <div class="circle"></div>-->
-            <!--  <div class="circle"></div>-->
-            <!--  <div class="circle"></div>-->
-            <!--  <div class="circle"></div>-->
-            <!--  <div class="circle"></div>-->
-            <!--</a>-->
-            <ul
-                class="overflow:auto display:inline-flex direction:rtl font-size:20px align-items-center list-style-type-none">
-                <li class="margin-right:15px">
-                    <a actions="closeModal"><i class="fas fa-times"> </i></a>
-                </li>
-                <li class="margin-right:15px">
-                    <a actions="minMaxModal">
-                        <i
-                            toggle="/assets/svg/window-restore.svg, /assets/svg/window-maximize.svg"
-                            toggle-attribute="src"
-                            class="height:18px"
-                            src="/assets/svg/window-maximize.svg"></i>
-                    </a>
-                </li>
-                <li class="margin-right:15px">
-                    <a actions="parkModal"
-                        ><i class="far fa-window-minimize"> </i
-                    ></a>
-                </li>
+	<body>
+		<div id="modal-viewport" hidden></div>
+		<div
+			content_id="content"
+			class="nav width:100% display:flex align-items-center bg-light-gray"
+			scroll-effect="hide-nav"
+			scroll-position="50">
+			<!--<a href="#" class="logo">Navbar</a>-->
+			<!--<a class="nav-toggle menu_icon--Vdots" toggle-sidenav="menuL">-->
+			<!--  <div class="circle"></div>-->
+			<!--  <div class="circle"></div>-->
+			<!--  <div class="circle"></div>-->
+			<!--  <div class="circle"></div>-->
+			<!--  <div class="circle"></div>-->
+			<!--</a>-->
+			<ul
+				class="overflow:auto display:inline-flex direction:rtl font-size:20px align-items-center list-style-type-none">
+				<li class="margin-right:15px">
+					<a actions="closeModal"><i class="fas fa-times"> </i></a>
+				</li>
+				<li class="margin-right:15px">
+					<a actions="minMaxModal">
+						<i
+							toggle="/assets/svg/window-restore.svg, /assets/svg/window-maximize.svg"
+							toggle-attribute="src"
+							class="height:18px"
+							src="/assets/svg/window-maximize.svg"></i>
+					</a>
+				</li>
+				<li class="margin-right:15px">
+					<a actions="parkModal"
+						><i class="far fa-window-minimize"> </i
+					></a>
+				</li>
 
-                <li class="margin-right:15px">
-                    <a fullscreen>
-                        <i class="height:18px" src="/assets/svg/expand.svg"></i>
-                        <i
-                            class="height:18px"
-                            src="/assets/svg/compress.svg"></i>
-                    </a>
-                </li>
+				<li class="margin-right:15px">
+					<a fullscreen>
+						<i class="height:18px" src="/assets/svg/expand.svg"></i>
+						<i
+							class="height:18px"
+							src="/assets/svg/compress.svg"></i>
+					</a>
+				</li>
 
-                <li class="margin-right:15px">
-                    <a
-                        actions="state, openModal"
-                        modal-src="render.html"
-                        state-array="modules"
-                        state-object=""
-                        state_to="builder"
-                        modal-width="100%"
-                        state_id="render">
-                        <i
-                            class="height:18px"
-                            src="/assets/svg/palette.svg"></i>
-                        <div
-                            state-array="modules"
-                            state-object=""
-                            state_to="render"
-                            class="sessionBuilderUI_Id"></div>
-                    </a>
-                </li>
+				<li class="margin-right:15px">
+					<a
+						actions="state, openModal"
+						modal-src="render.html"
+						state-array="modules"
+						state-object=""
+						state_to="builder"
+						modal-width="100%"
+						state_id="render">
+						<i
+							class="height:18px"
+							src="/assets/svg/palette.svg"></i>
+						<div
+							state-array="modules"
+							state-object=""
+							state_to="render"
+							class="sessionBuilderUI_Id"></div>
+					</a>
+				</li>
 
-                <li class="margin-right:15px">
-                    <a
-                        actions="deleteDocument, closeModal"
-                        array="module_activity"
-                        object=""
-                        state_id="form-fields"
-                        ><i
-                            class="height:18px"
-                            src="/assets/svg/trash-alt.svg"></i
-                    ></a>
-                </li>
-            </ul>
-        </div>
-        <div class="padding:20px" content_id="content">
-            <form realtime="true" array="module_activity" class="mbottom:75">
-                <input
-                    type="hidden"
-                    key="module_id"
-                    state_id="module_id"
-                    placeholder="Module Id" />
+				<li class="margin-right:15px">
+					<a
+						actions="deleteDocument, closeModal"
+						array="module_activity"
+						object=""
+						state_id="form-fields"
+						><i
+							class="height:18px"
+							src="/assets/svg/trash-alt.svg"></i
+					></a>
+				</li>
+			</ul>
+		</div>
+		<div class="padding:20px" content_id="content">
+			<form realtime="true" array="module_activity" class="mbottom:75">
+				<input
+					type="hidden"
+					key="module_id"
+					state_id="module_id"
+					placeholder="Module Id" />
 
-                <input
-                    type="text"
-                    key="name"
-                    state_id="form-fields"
-                    class="floating-label"
-                    placeholder="Title" />
+				<input
+					type="text"
+					key="name"
+					state_id="form-fields"
+					class="floating-label"
+					placeholder="Title" />
 
-                <textarea
-                    key="description"
-                    state_id="form-fields"
-                    placeholder="Description"
-                    class="floating-label"></textarea>
+				<textarea
+					key="description"
+					state_id="form-fields"
+					placeholder="Description"
+					class="floating-label"></textarea>
 
-                <div class="padding:20px-top display:flex flex-wrap-wrap">
-                    <div class="flex-half padding:10px-right">
-                        <!-- CoCreate Select -->
-                        <div
-                            class="select--field sortable floating-label"
-                            array="module_activity"
-                            key="stage"
-                            placeholder="Stage"
-                            state_id="form-fields"
-                            realtime="true">
-                            <input
-                                placeholder="Search"
-                                filter-parent="array"
-                                filter-search />
-                            <ul
-                                array="module_activity"
-                                state_to="me1234"
-                                filter-key="module_id"
-                                filter-value="5e6d79f9d8cdbe53927a0443"
-                                render-selector="[template]"
-                                class="options overflow:auto">
-                                <li
-                                    class="option display:flex margin:5px"
-                                    template
-                                    value=""
-                                    state_id="me1234">
-                                    <p
-                                        array="module_activity"
-                                        object=""
-                                        key="name"
-                                        state_id="me1234">
-                                        Stage Name
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+				<div class="padding:20px-top display:flex flex-wrap-wrap">
+					<div class="flex-half padding:10px-right">
+						<!-- CoCreate Select -->
+						<div
+							class="select--field sortable floating-label"
+							array="module_activity"
+							key="stage"
+							placeholder="Stage"
+							state_id="form-fields"
+							realtime="true">
+							<input
+								placeholder="Search"
+								filter-parent="array"
+								filter-search />
+							<ul
+								array="module_activity"
+								state_to="me1234"
+								filter-query-key="module_id"
+								filter-query-value="5e6d79f9d8cdbe53927a0443"
+								render-selector="[template]"
+								class="options overflow:auto">
+								<li
+									class="option display:flex margin:5px"
+									template
+									value=""
+									state_id="me1234">
+									<p
+										array="module_activity"
+										object=""
+										key="name"
+										state_id="me1234">
+										Stage Name
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
 
-                    <div class="flex-half padding:10px-right">
-                        <!-- CoCreate Select -->
-                        <div
-                            class="select--field sortable floating-label"
-                            key="members"
-                            multiple
-                            placeholder="Members"
-                            state_id="form-fields">
-                            <input
-                                placeholder="Search"
-                                filter-parent="array"
-                                filter-search />
-                            <ul
-                                array="users"
-                                state_to="me1234"
-                                render-selector="[template]"
-                                class="options overflow:auto">
-                                <li
-                                    class="option display:flex margin:5px"
-                                    template
-                                    state_id="me1234">
-                                    <!-- Avatar with label and status only-->
-                                    <div class="avatar-wrapper">
-                                        <a class="avatar round">
-                                            <span
-                                                array="users"
-                                                object=""
-                                                key="name"
-                                                class="first-letter avatar-name"
-                                                >B</span
-                                            >
-                                            <span
-                                                array="users"
-                                                object=""
-                                                key="profile_image"
-                                                class="avatar-image">
-                                                <img
-                                                    src="/_static/Velazquez.jpg"
-                                                    onerror="this.style.display='none'" />
-                                            </span>
-                                        </a>
-                                    </div>
+					<div class="flex-half padding:10px-right">
+						<!-- CoCreate Select -->
+						<div
+							class="select--field sortable floating-label"
+							key="members"
+							multiple
+							placeholder="Members"
+							state_id="form-fields">
+							<input
+								placeholder="Search"
+								filter-parent="array"
+								filter-search />
+							<ul
+								array="users"
+								state_to="me1234"
+								render-selector="[template]"
+								class="options overflow:auto">
+								<li
+									class="option display:flex margin:5px"
+									template
+									state_id="me1234">
+									<!-- Avatar with label and status only-->
+									<div class="avatar-wrapper">
+										<a class="avatar round">
+											<span
+												array="users"
+												object=""
+												key="name"
+												class="first-letter avatar-name"
+												>B</span
+											>
+											<span
+												array="users"
+												object=""
+												key="profile_image"
+												class="avatar-image">
+												<img
+													src="/_static/Velazquez.jpg"
+													onerror="this.style.display='none'" />
+											</span>
+										</a>
+									</div>
 
-                                    <div
-                                        class="avatar-content margin-left:10px">
-                                        <p
-                                            class="avatar-title"
-                                            array="users"
-                                            object=""
-                                            key="name"
-                                            state_id="me1234">
-                                            user name
-                                        </p>
-                                        <p
-                                            class="avatar-subtitle"
-                                            array="users"
-                                            object=""
-                                            key="email"
-                                            state_id="me1234"></p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+									<div
+										class="avatar-content margin-left:10px">
+										<p
+											class="avatar-title"
+											array="users"
+											object=""
+											key="name"
+											state_id="me1234">
+											user name
+										</p>
+										<p
+											class="avatar-subtitle"
+											array="users"
+											object=""
+											key="email"
+											state_id="me1234"></p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
-                <div class="padding:20px-top display:flex flex-wrap-wrap">
-                    <div class="flex-half padding:10px-right">
-                        <!-- CoCreate Select -->
-                        <div
-                            class="select--field sortable floating-label"
-                            key="labels"
-                            multiple
-                            placeholder="Labels"
-                            state_id="form-fields">
-                            <input class="option-search" placeholder="Search" />
-                            <ul class="options overflow:auto">
-                                <li
-                                    class="option display:flex margin:5px"
-                                    value="Open">
-                                    Open
-                                </li>
-                                <li
-                                    class="option display:flex margin:5px"
-                                    value="Closed">
-                                    Closed
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+				<div class="padding:20px-top display:flex flex-wrap-wrap">
+					<div class="flex-half padding:10px-right">
+						<!-- CoCreate Select -->
+						<div
+							class="select--field sortable floating-label"
+							key="labels"
+							multiple
+							placeholder="Labels"
+							state_id="form-fields">
+							<input class="option-search" placeholder="Search" />
+							<ul class="options overflow:auto">
+								<li
+									class="option display:flex margin:5px"
+									value="Open">
+									Open
+								</li>
+								<li
+									class="option display:flex margin:5px"
+									value="Closed">
+									Closed
+								</li>
+							</ul>
+						</div>
+					</div>
 
-                    <div class="flex-half padding:10px-right">
-                        <!-- CoCreate Select -->
-                        <div
-                            class="select--field sortable floating-label"
-                            key="status"
-                            multiple
-                            placeholder="Status"
-                            state_id="form-fields">
-                            <input
-                                placeholder="Search"
-                                filter-parent="array"
-                                filter-search />
-                            <ul
-                                array="users"
-                                render-selector="[template]"
-                                state_to="me1234"
-                                class="options overflow:auto">
-                                <li
-                                    class="option display:flex margin:5px"
-                                    template
-                                    state_id="me1234">
-                                    <!-- Avatar with label and status only-->
-                                    <div class="avatar-wrapper">
-                                        <a class="avatar round">
-                                            <span
-                                                array="users"
-                                                object=""
-                                                key="name"
-                                                class="first-letter avatar-name"
-                                                >B</span
-                                            >
-                                            <span
-                                                array="users"
-                                                object=""
-                                                key="profile_image"
-                                                class="avatar-image">
-                                                <img
-                                                    src="/_static/Velazquez.jpg"
-                                                    onerror="this.style.display='none'" />
-                                            </span>
-                                        </a>
-                                    </div>
+					<div class="flex-half padding:10px-right">
+						<!-- CoCreate Select -->
+						<div
+							class="select--field sortable floating-label"
+							key="status"
+							multiple
+							placeholder="Status"
+							state_id="form-fields">
+							<input
+								placeholder="Search"
+								filter-parent="array"
+								filter-search />
+							<ul
+								array="users"
+								render-selector="[template]"
+								state_to="me1234"
+								class="options overflow:auto">
+								<li
+									class="option display:flex margin:5px"
+									template
+									state_id="me1234">
+									<!-- Avatar with label and status only-->
+									<div class="avatar-wrapper">
+										<a class="avatar round">
+											<span
+												array="users"
+												object=""
+												key="name"
+												class="first-letter avatar-name"
+												>B</span
+											>
+											<span
+												array="users"
+												object=""
+												key="profile_image"
+												class="avatar-image">
+												<img
+													src="/_static/Velazquez.jpg"
+													onerror="this.style.display='none'" />
+											</span>
+										</a>
+									</div>
 
-                                    <div
-                                        class="avatar-content margin-left:10px">
-                                        <p
-                                            class="avatar-title"
-                                            array="users"
-                                            object=""
-                                            key="name"
-                                            state_id="me1234">
-                                            user name
-                                        </p>
-                                        <p
-                                            class="avatar-subtitle"
-                                            array="users"
-                                            object=""
-                                            key="email"
-                                            state_id="me1234"></p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+									<div
+										class="avatar-content margin-left:10px">
+										<p
+											class="avatar-title"
+											array="users"
+											object=""
+											key="name"
+											state_id="me1234">
+											user name
+										</p>
+										<p
+											class="avatar-subtitle"
+											array="users"
+											object=""
+											key="email"
+											state_id="me1234"></p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
-                <!-- Tasklist Component -->
-                <div
-                    id="domEditor1"
-                    class="domEditor"
-                    key="tasklists"
-                    state_id="form-fields">
-                    <div
-                        sortable
-                        class="display:flex align-items-flex-start flex-wrap-wrap"
-                        dnd-group-key="tasklist">
-                        <!-- sortable card -->
-                        <div id="tasklist" class="card template">
-                            <div
-                                class="margin:15px font-size-18px text-dark-gray">
-                                <span class="display:inline-block">
-                                    <input
-                                        array="module_activity"
-                                        state_id="form-fields"
-                                        object=""
-                                        key="clone-name"
-                                        id="stage-name"
-                                        class="input_field"
-                                        placeholder="Tasklist" />
-                                </span>
-                                <span class="float-right display:inline-block"
-                                    ><a clone_id="tasklist" class="deleteBtn"
-                                        ><i
-                                            class="height:18px"
-                                            src="/assets/svg/times.svg"></i></a
-                                ></span>
-                            </div>
-                            <div
-                                class="border-bottom border-color-extra-medium-gray">
-                                <div
-                                    class="display:flex align-items-center padding:0px_15px">
-                                    <div class="padding:15px-right">2 / 3</div>
-                                    <div class="progressbar">
-                                        <div
-                                            style="
-                                                transform: translateX(-30%);
-                                            "></div>
-                                    </div>
-                                </div>
-                                <div sortable dnd-group-key="task-items">
-                                    <!-- sortable task item -->
-                                    <div
-                                        id="task-item"
-                                        class="display:flex flex-wrap-nowrap align-items-center margin:0px_15px padding:10px_0px template">
-                                        <label class="checkbox">
-                                            <input
-                                                type="checkbox"
-                                                key="taskcheck" /><span
-                                                class="mark display:inline-block"></span>
-                                        </label>
-                                        <div class="flex-grow-1">
-                                            <input
-                                                class="floating-label"
-                                                object="5d8c79e7e4be424681b5e48d"
-                                                key="taskname"
-                                                placeholder="Task Name" />
-                                        </div>
-                                        <a
-                                            clone_id="task-item"
-                                            class="margin:15px-left font-size:20px deleteBtn"
-                                            ><i
-                                                class="height:18px"
-                                                src="/assets/svg/trash-alt.svg"></i
-                                        ></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="margin:0px_15px padding:15px_0px">
-                                <a
-                                    clone_id="task-item"
-                                    actions="clone"
-                                    class="noDrag"
-                                    style="display: block"
-                                    ><i
-                                        class="height:16px"
-                                        src="/assets/svg/plus.svg"></i>
-                                    Add Task</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Sortable Tasklist -->
-                </div>
-                <!-- domEditor -->
+				<!-- Tasklist Component -->
+				<div
+					id="domEditor1"
+					class="domEditor"
+					key="tasklists"
+					state_id="form-fields">
+					<div
+						sortable
+						class="display:flex align-items-flex-start flex-wrap-wrap"
+						dnd-group-key="tasklist">
+						<!-- sortable card -->
+						<div id="tasklist" class="card template">
+							<div
+								class="margin:15px font-size-18px text-dark-gray">
+								<span class="display:inline-block">
+									<input
+										array="module_activity"
+										state_id="form-fields"
+										object=""
+										key="clone-name"
+										id="stage-name"
+										class="input_field"
+										placeholder="Tasklist" />
+								</span>
+								<span class="float-right display:inline-block"
+									><a clone_id="tasklist" class="deleteBtn"
+										><i
+											class="height:18px"
+											src="/assets/svg/times.svg"></i></a
+								></span>
+							</div>
+							<div
+								class="border-bottom border-color-extra-medium-gray">
+								<div
+									class="display:flex align-items-center padding:0px_15px">
+									<div class="padding:15px-right">2 / 3</div>
+									<div class="progressbar">
+										<div
+											style="
+												transform: translateX(-30%);
+											"></div>
+									</div>
+								</div>
+								<div sortable dnd-group-key="task-items">
+									<!-- sortable task item -->
+									<div
+										id="task-item"
+										class="display:flex flex-wrap-nowrap align-items-center margin:0px_15px padding:10px_0px template">
+										<label class="checkbox">
+											<input
+												type="checkbox"
+												key="taskcheck" /><span
+												class="mark display:inline-block"></span>
+										</label>
+										<div class="flex-grow-1">
+											<input
+												class="floating-label"
+												object="5d8c79e7e4be424681b5e48d"
+												key="taskname"
+												placeholder="Task Name" />
+										</div>
+										<a
+											clone_id="task-item"
+											class="margin:15px-left font-size:20px deleteBtn"
+											><i
+												class="height:18px"
+												src="/assets/svg/trash-alt.svg"></i
+										></a>
+									</div>
+								</div>
+							</div>
+							<div class="margin:0px_15px padding:15px_0px">
+								<a
+									clone_id="task-item"
+									actions="clone"
+									class="noDrag"
+									style="display: block"
+									><i
+										class="height:16px"
+										src="/assets/svg/plus.svg"></i>
+									Add Task</a
+								>
+							</div>
+						</div>
+					</div>
+					<!-- Sortable Tasklist -->
+				</div>
+				<!-- domEditor -->
 
-                <div class="width:100% noDrag">
-                    <input id="tasklist-name" /><a
-                        clone_id="tasklist"
-                        actions="clone"
-                        class="noDrag"
-                        style="display: block"
-                        clone-key="tasklist-name"
-                        >New Tasklist</a
-                    >
-                </div>
+				<div class="width:100% noDrag">
+					<input id="tasklist-name" /><a
+						clone_id="tasklist"
+						actions="clone"
+						class="noDrag"
+						style="display: block"
+						clone-key="tasklist-name"
+						>New Tasklist</a
+					>
+				</div>
 
-                <!--<div class="display:flex align-items-center padding:20px-top">-->
-                <!--  <div class='avatar padding:20px-right margin:10px-top'></div>-->
-                <!--  <div class="flex-1-1">-->
-                <!--    <input object="5e07c2a43145e2497e494bf0" type="text" key="name" class="floating-label" placeholder="Comment">-->
-                <!--  </div>-->
-                <!--</div>-->
-                <!--<div class="padding:20px-top">-->
-                <!--  <div class="display:flex align-items-center font-bold">-->
-                <!--    <i class="fas fa-list"></i><label class="padding:10px-left">Activity</label>-->
-                <!--  </div>-->
+				<!--<div class="display:flex align-items-center padding:20px-top">-->
+				<!--  <div class='avatar padding:20px-right margin:10px-top'></div>-->
+				<!--  <div class="flex-1-1">-->
+				<!--    <input object="5e07c2a43145e2497e494bf0" type="text" key="name" class="floating-label" placeholder="Comment">-->
+				<!--  </div>-->
+				<!--</div>-->
+				<!--<div class="padding:20px-top">-->
+				<!--  <div class="display:flex align-items-center font-bold">-->
+				<!--    <i class="fas fa-list"></i><label class="padding:10px-left">Activity</label>-->
+				<!--  </div>-->
 
-                <!--  <div class="display:flex align-items-center padding:10px-top">-->
-                <!--    <div class='avatar padding:20px-right'></div>-->
-                <!--    <div class="comment-content">-->
-                <!--      <div>John Doe <small class="margin-left:10px text-grey">2019-12-29</small></div> -->
-                <!--      <div>John Doe. Test Test Test</div> -->
-                <!--    </div>-->
-                <!--  </div>-->
+				<!--  <div class="display:flex align-items-center padding:10px-top">-->
+				<!--    <div class='avatar padding:20px-right'></div>-->
+				<!--    <div class="comment-content">-->
+				<!--      <div>John Doe <small class="margin-left:10px text-grey">2019-12-29</small></div> -->
+				<!--      <div>John Doe. Test Test Test</div> -->
+				<!--    </div>-->
+				<!--  </div>-->
 
-                <!--  <div class="display:flex align-items-center padding:10px-top">-->
-                <!--    <div class='avatar padding:20px-right'></div>-->
-                <!--    <div class="comment-content">-->
-                <!--      <div>John Doe <small class="margin-left:10px text-grey">2019-12-29</small></div> -->
-                <!--      <div>Currently we have two new designs ready to ship.</div> -->
-                <!--    </div>-->
-                <!--  </div>-->
+				<!--  <div class="display:flex align-items-center padding:10px-top">-->
+				<!--    <div class='avatar padding:20px-right'></div>-->
+				<!--    <div class="comment-content">-->
+				<!--      <div>John Doe <small class="margin-left:10px text-grey">2019-12-29</small></div> -->
+				<!--      <div>Currently we have two new designs ready to ship.</div> -->
+				<!--    </div>-->
+				<!--  </div>-->
 
-                <!--  <div class="display:flex align-items-center padding:10px-top">-->
-                <!--    <div class='avatar padding:20px-right'></div>-->
-                <!--    <div class="comment-content">-->
-                <!--      <div>John Doe <small class="margin-left:10px text-grey">2019-12-29</small></div> -->
-                <!--      <div>We need to fix the console asap!</div> -->
-                <!--    </div>-->
-                <!--  </div>-->
-                <!--</div>-->
+				<!--  <div class="display:flex align-items-center padding:10px-top">-->
+				<!--    <div class='avatar padding:20px-right'></div>-->
+				<!--    <div class="comment-content">-->
+				<!--      <div>John Doe <small class="margin-left:10px text-grey">2019-12-29</small></div> -->
+				<!--      <div>We need to fix the console asap!</div> -->
+				<!--    </div>-->
+				<!--  </div>-->
+				<!--</div>-->
 
-                <a
-                    class="submitBtn position:fixed bottom:15px right:15px bg-blue grow-hover round"
-                    ><i src="/assets/svg/save.svg"></i
-                ></a>
-            </form>
-        </div>
-    </body>
+				<a
+					class="submitBtn position:fixed bottom:15px right:15px bg-blue grow-hover round"
+					><i src="/assets/svg/save.svg"></i
+				></a>
+			</form>
+		</div>
+	</body>
 
-    <script src="https://CoCreate.app/dist/CoCreate.js"></script>
+	<script src="https://CoCreate.app/dist/CoCreate.js"></script>
 </html>
