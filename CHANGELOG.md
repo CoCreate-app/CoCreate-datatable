@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.11.0...v1.11.1) (2025-01-18)
+
+
+### Bug Fixes
+
+* filter-query-key ([a4132d2](https://github.com/CoCreate-app/CoCreate-datatable/commit/a4132d2415f17922fef17f338c87e418dd02ce5c))
+
 # [1.11.0](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.10.3...v1.11.0) (2024-11-04)
 
 
