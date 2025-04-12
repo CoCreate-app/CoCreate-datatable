@@ -136,12 +136,14 @@
 					></a>
 				</li>
 				<li class="margin-right:15px">
-					<a toggle="hidden" toogle-selector="#column-visibility"
+					<a toggle="hidden" toogle-query="#column-visibility"
 						><i class="height:18px" src="/assets/svg/eye.svg"></i
 					></a>
 				</li>
 				<li class="margin-right:15px">
-					<a actions="export" export-closest="nav; [render-selector]"
+					<a
+						actions="export"
+						export-query="$closest nav; [render-query]"
 						><i
 							class="height:18px"
 							src="/assets/svg/file-download.svg"></i
@@ -155,12 +157,12 @@
 					></a>
 				</li>
 				<li class="margin-right:15px">
-					<a actions="copy" copy-selector="tbody"
+					<a actions="copy" copy-query="tbody"
 						><i class="height:18px" src="/assets/svg/copy.svg"></i
 					></a>
 				</li>
 				<li class="margin-right:15px">
-					<a actions="print" print-closest="nav; parent; tbody"
+					<a actions="print" print-query="$closest nav; parent; tbody"
 						><i class="height:18px" src="/assets/svg/print.svg"></i
 					></a>
 				</li>
@@ -183,7 +185,7 @@
 							type="text"
 							class="floating-label"
 							filter-query-key="name"
-							filter-closest="table; tbody"
+							filter-query="$closest table; tbody"
 							placeholder="Name" />
 						<span
 							class="position:absolute bottom:22px right:20px float:right z-index:6">
@@ -191,7 +193,7 @@
 							<a
 								filter-sort-key="name"
 								filter-sort-toggle
-								filter-closest="table; tbody">
+								filter-query="$closest table; tbody">
 								<i></i>
 							</a>
 						</span>
@@ -202,7 +204,7 @@
 							type="text"
 							class="floating-label"
 							filter-query-key="_id"
-							filter-closest="table; tbody"
+							filter-query="$closest table; tbody"
 							placeholder="Document_id" />
 						<span
 							class="position:absolute bottom:22px right:20px float:right z-index:6">
@@ -212,7 +214,7 @@
 								filter-sort-direction="asc"
 								click-value="desc, asc"
 								click-attribute="filter-sort-direction"
-								filter-closest="table; tbody">
+								filter-query="$closest table; tbody">
 							</a>
 						</span>
 					</td>
@@ -223,7 +225,7 @@
 					filter-limit=""
 					filter-sort-key="name"
 					filter-sort-direction="asc"
-					render-selector="[template]"
+					render-query="[template]"
 					class="display:flex flex-direction:column height:100%"
 					state_to="me1234">
 					<tr
