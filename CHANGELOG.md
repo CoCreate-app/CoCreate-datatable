@@ -1,3 +1,13 @@
+## [1.11.2](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.11.1...v1.11.2) (2025-04-30)
+
+
+### Bug Fixes
+
+* added css-loader ([6911210](https://github.com/CoCreate-app/CoCreate-datatable/commit/6911210fa69ab24c1430986e060447cba697bd9c))
+* update query attributes ([eeec0a8](https://github.com/CoCreate-app/CoCreate-datatable/commit/eeec0a87916891b6a1d5aeb90517c1e68adde680))
+* updated cocreate modules versions ([86e9c7b](https://github.com/CoCreate-app/CoCreate-datatable/commit/86e9c7b183c94f15b131905ff489247465cfd01f))
+* webpack.config and devdependencies ([3f2c200](https://github.com/CoCreate-app/CoCreate-datatable/commit/3f2c20033e06f174f44c61f67152b45a9a113543))
+
 ## [1.11.1](https://github.com/CoCreate-app/CoCreate-datatable/compare/v1.11.0...v1.11.1) (2025-01-18)
 
 
